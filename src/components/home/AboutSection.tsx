@@ -3,13 +3,12 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import logo from '../../assets/logo.png'
 import { useLocation } from 'react-router-dom';
-// import { PrimaryButton, SecondaryButton, DangerButton } from "../ui/Buttons";
 
 const words = ["BCA Undergraduate", "Problem Solver", "Open Source Enthusiast"];
 
 const AboutSection: React.FC = () => {
   const location = useLocation();
-  const sectionRef = useRef<HTMLDivElement| null>(null);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (sectionRef.current) {
@@ -93,45 +92,45 @@ const AboutSection: React.FC = () => {
       </div>
 
       <div className="w-auto h-fit p-0.5 space-y-5 m-5 sm:m-10 lg:m-20 rounded-2xl bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500">
-  <div
-    ref={sectionRef}
-    id="about"
-    className="bg-gradient-to-l from-black via-gray-900 to-black h-fit p-6 sm:p-10 space-y-5 rounded-2xl w-auto"
-  >
-    <h2 className="text-2xl font-bold mb-10 sm:mb-20">About Me:</h2>
+        <div
+          ref={sectionRef}
+          id="about"
+          className="bg-gradient-to-l from-black via-gray-900 to-black h-fit p-6 sm:p-10 space-y-5 rounded-2xl w-auto"
+        >
+          <h2 className="text-2xl font-bold mb-10 sm:mb-20">About Me:</h2>
 
-    {/* Responsive Container */}
-    <div className="flex flex-col lg:flex-row justify-between gap-10">
-      <p className="text-base sm:text-lg leading-relaxed lg:w-2/3">
-        Hi, I'm a frontend developer currently pursuing a Bachelor of Computer
-        Applications (BCA), driven by a passion for creating intuitive,
-        responsive, and user-centric digital experiences. <br />
-        <br />
-        My journey into tech began with a deep interest in programming, where I
-        built a strong foundation in C, C++, and Data Structures & Algorithms.
-        Over time, I discovered my love for frontend development and honed my
-        skills in HTML, CSS, Tailwind CSS, JavaScript, and React.js, enabling me
-        to bring ideas to life through clean, efficient, and scalable code.{" "}
-        <br />
-        <br />
-        I take pride in writing well-structured code and designing interfaces
-        that are not only visually appealing but also accessible and
-        performance-optimized. I'm also well-versed in MySQL and Relational
-        Databases, giving me the ability to manage data effectively and
-        integrate backend systems seamlessly. <br />
-        <br />
-        Beyond the screen, I enjoy solving algorithmic challenges and exploring
-        modern design trends, always striving to learn, grow, and push the
-        boundaries of what I can create. <br />
-        <br />
-        Let’s build something great together!
-      </p>
+          {/* Responsive Container */}
+          <div className="flex flex-col lg:flex-row justify-between gap-10">
+            <p className="text-base sm:text-lg leading-relaxed lg:w-2/3">
+              Hi, I'm a frontend developer currently pursuing a Bachelor of Computer
+              Applications (BCA), driven by a passion for creating intuitive,
+              responsive, and user-centric digital experiences. <br />
+              <br />
+              My journey into tech began with a deep interest in programming, where I
+              built a strong foundation in C, C++, and Data Structures & Algorithms.
+              Over time, I discovered my love for frontend development and honed my
+              skills in HTML, CSS, Tailwind CSS, JavaScript, and React.js, enabling me
+              to bring ideas to life through clean, efficient, and scalable code.{" "}
+              <br />
+              <br />
+              I take pride in writing well-structured code and designing interfaces
+              that are not only visually appealing but also accessible and
+              performance-optimized. I'm also well-versed in MySQL and Relational
+              Databases, giving me the ability to manage data effectively and
+              integrate backend systems seamlessly. <br />
+              <br />
+              Beyond the screen, I enjoy solving algorithmic challenges and exploring
+              modern design trends, always striving to learn, grow, and push the
+              boundaries of what I can create. <br />
+              <br />
+              Let’s build something great together!
+            </p>
 
-      {/* Right Code Block */}
-      <div className="bg-[#0d1021] p-4 sm:p-6 rounded-xl shadow-lg text-xs sm:text-sm font-mono w-full lg:w-1/3 border border-[#222] overflow-x-auto">
-        <pre className="text-yellow-400 whitespace-pre-wrap">
-          {`const coder = {
-  name: 'Vishesh Chauhan',
+            {/* Right Code Block */}
+            <div className="bg-[#0d1021] p-4 sm:p-6 rounded-xl shadow-lg text-xs sm:text-sm font-mono w-full lg:w-1/3 border border-[#222] overflow-x-auto">
+              <pre className="text-yellow-400 whitespace-pre-wrap">
+                {`const coder = {
+  name: 'Vishesh',
   skills: ['React', 'TypeScript', 'Tailwind', 'Java',
    'Spring Boot', 'MySQL'],
   hardWorker: true,
@@ -145,57 +144,11 @@ const AboutSection: React.FC = () => {
     );
   }
 };`}
-        </pre>
+              </pre>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-
-
-      {/* <section>| **About Me** | Timeline (education + experience), Skill charts, Tech stack badges          Hero Section (Top):
-          Your Name (big, bold)
-          Tagline/Role → “BCA Student | Full Stack Developer | Tech Enthusiast”
-          A short 1-liner goal → “Passionate about building web apps with React & Java”
-          CTA buttons → “View Projects” / “Contact Me”
-          About Preview (small intro):
-          3–4 lines about your journey, passion, and skills         <br />
-          Why not About as main page?
-          Recruiters/visitors first want a quick overview, not a long story.
-          About page is good for details (your journey, education, etc.), but Home should grab attention.
-          <br />          Then a “Read More” → About Page button                        | Recharts (skill charts), Context data handling                             |
-        </section> 
-
-         <section className="flex gap-4">
-          <PrimaryButton label="Save" onClick={() => alert("Saved!")} />
-          <SecondaryButton label="Cancel" onClick={() => alert("Cancelled!")} />
-          <DangerButton label="Delete" onClick={() => alert("Deleted!")} />
-        </section> 
-
-         <section><div className="p-6 sm:p-12 lg:p-24 grid grid-cols-1 lg:grid-cols-2 gap-10">
-                  <div className="space-y-6">
-                    <p className="inline-flex gap-2 items-center">
-                      <img src={img} alt="React Logo" className="h-6" />
-                      <span>Frontend Developer</span>
-                    </p>
-                    <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-                      Transforming{' '}
-                      <span className="bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 text-transparent bg-clip-text inline-block">
-                        Ideas
-                      </span>{' '}
-                      into Seamless User{' '}
-                      <span className="bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 text-transparent bg-clip-text inline-block">
-                        Experiences
-                      </span>
-                    </h1>
-                    <p className="text-lg sm:text-base lg:text-lg w-full lg:w-3/4">
-                      I'm a Full Stack Software Engineer specializing in building modern web applications. Check out my projects and skills.
-                    </p>
-                    <button className="bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 px-6 py-3 rounded-lg">
-                      Learn More
-                    </button>
-                  </div>
-                </div>
-        </section> */}
     </div>
   );
 };

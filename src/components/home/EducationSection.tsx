@@ -1,40 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGraduationCap } from 'react-icons/fa';
-
-const educationData = [
-  {
-    degree: 'Bachelor of Computer Applications (BCA)',
-    institution: 'Avviare Educational Hub',
-    duration: '2023 - 2026',
-    details:
-      'Pursuing a comprehensive program in Computer Applications with a focus on software development, programming fundamentals, data structures, web technologies, and database management. Actively involved in real-world projects, coding challenges, and problem-solving tasks.',
-  },
-  {
-    degree: 'Self-Learning & Skill Development',
-    institution: 'Independent Learning',
-    duration: '2021 - 2023',
-    details:
-      'After completing my 12th in 2021, I dedicated two years to exploring career options and strengthening my programming fundamentals through self-learning. Gained hands-on experience with Java, JavaScript, and problem-solving, which built a strong foundation for my BCA journey started in 2023.',
-  },
-  {
-    degree: 'Higher Secondary Education (12th)',
-    institution: 'Shri Krishna Inter College',
-    duration: '2019 - 2021',
-    details:
-      'Completed 12th grade from UP Board with Physics, Chemistry, and Mathematics (PCM) as core subjects, securing 65%. Developed logical and analytical reasoning skills, which nurtured an early interest in programming and technical fields.',
-  },
-  {
-    degree: 'High School (10th)',
-    institution: 'Shri Krishna Inter College',
-    duration: '2017 - 2019',
-    details:
-      'Completed Class 10th (UP Board) with 70%. Built a strong academic foundation across core subjects, developing consistency, discipline, and an interest in analytical learning that prepared me for higher studies.',
-  },
-
-];
+import { useData } from '../../context/DataContext';
 
 const EducationSection:React.FC = () => {
+  const {education} = useData();
+
   return (
     <section id="education" className="h-fit py-20 px-5 bg-gradient-to-r from-black via-gray-900 to-black">
       
@@ -48,7 +19,7 @@ const EducationSection:React.FC = () => {
       </motion.h2>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 md:space-y-8">
-        {educationData.map((edu, index) => (
+        {education.map((edu, index) => (
           <motion.div
             key={index}
             // className="relative bg-slate-950 rounded-2xl p-6 border border-none shadow-xl shadow-purple-900 hover:shadow-cyan-900 transition-all duration-500"

@@ -1,5 +1,6 @@
 import React from "react";
-import { blogs, type Blog } from "../../data/blogs"; // 👈 import data
+import { type Blog } from "../../types/dataTypes";
+import { useData } from "../../context/DataContext";
 
 const SciFiCard: React.FC<{ item: Blog }> = ({ item }) => {
   return (
@@ -26,6 +27,7 @@ const SciFiCard: React.FC<{ item: Blog }> = ({ item }) => {
 };
 
 const BlogSection: React.FC = () => {
+  const {blogs} = useData();
   return (
     <section className="h-fit space-y-5 bg-gradient-to-br from-black via-gray-900 to-black p-24">
       <h1 className="text-4xl py-2 sm:text-4xl md:text-5xl font-bold mb-12 sm:mb-16 bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 text-transparent bg-clip-text w-fit mx-auto orbitron">Blogs</h1>

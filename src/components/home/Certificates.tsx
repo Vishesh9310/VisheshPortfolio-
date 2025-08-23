@@ -1,12 +1,9 @@
 import React from 'react'
-import certificate1 from '../../assets/certificate/Screenshot (498).png'
-import certificate2 from '../../assets/certificate/Screenshot (499).png'
+import { useData } from '../../context/DataContext'
 
 const Certificates: React.FC = () => {
-const certificationData = [
-    { img: certificate1, desc: "hello vishesh", date: "20/12/2025" },
-    { img: certificate2, desc: "hello vishesh", date: "20/12/2025" },
-]
+  const {certificationData} = useData();
+
   return (
     <section  className='space-y-10 text-white bg-gradient-to-r from-black via-purple-950 to-black h-fit p-24'>
         <h1 className='text-center font-bold orbitron tracking-[0.1em] text-4xl p-5'>Certifications</h1>

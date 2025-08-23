@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
-import { blogs, type Blog } from "../data/blogs";
-
+import { type Blog } from "../types/dataTypes";
+import { useData } from "../context/DataContext";
 
 const Blogs: React.FC = () => {
+  const {blogs} = useData();
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
   const blogsPerPage = 2;

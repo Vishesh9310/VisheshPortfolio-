@@ -1,40 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-const experiences = [
-  {
-    role: "Frontend Developer Intern",
-    company: "TechKnights",
-    duration: "Jan 2025 - Mar 2025",
-    description:
-      "Worked on building responsive React components, optimized state management, and improved performance.",
-  },
-  {
-    role: "Full Stack Developer",
-    company: "Freelance",
-    duration: "2024 - Present",
-    description:
-      "Developed REST APIs with Spring Boot, integrated MySQL, and deployed apps using Docker & GitHub Actions.",
-  },
-];
-
-const education = [
-  {
-    degree: "BCA - Computer Applications",
-    institution: "XYZ University",
-    duration: "2022 - 2025",
-    description:
-      "Studying core CS subjects, Java, React, DSA, and building real-world projects.",
-  },
-  {
-    degree: "Higher Secondary",
-    institution: "ABC School",
-    duration: "2020 - 2022",
-    description: "Specialized in PCM with Computer Science.",
-  },
-];
+import { useData } from "../../context/DataContext";
 
 const ExperienceSection: React.FC = () => {
+  const {experience, education} = useData();
+
   return (
     <div className="min-h-fit bg-gray-50 dark:bg-gray-900 py-12 px-6">
       {/* Header */}
@@ -51,7 +21,7 @@ const ExperienceSection: React.FC = () => {
             Work Experience
           </h2>
           <div className="space-y-8 border-l-2 border-purple-400 pl-6">
-            {experiences.map((exp, i) => (
+            {experience.map((exp, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, x: -30 }}
@@ -60,8 +30,8 @@ const ExperienceSection: React.FC = () => {
                 viewport={{ once: true }}
                 className="relative"
               >
-                <div className="absolute -left-3 w-6 h-6 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full border-2 border-white dark:border-gray-900"></div>
-                <h3 className="text-lg font-semibold text-purple-600 dark:text-purple-400">
+                <div className="absolute -left-3 w-6 h-6 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full border-2 border-white dark:border-gray-900 mr-5"></div>
+                <h3 className="pl-5 text-lg font-semibold text-purple-600 dark:text-purple-400">
                   {exp.role}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
@@ -91,14 +61,14 @@ const ExperienceSection: React.FC = () => {
                 className="relative"
               >
                 <div className="absolute -left-3 w-6 h-6 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full border-2 border-white dark:border-gray-900"></div>
-                <h3 className="text-lg font-semibold text-blue-600 dark:text-blue-400">
+                <h3 className="pl-5 text-lg font-semibold text-blue-600 dark:text-blue-400">
                   {edu.degree}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
                   {edu.institution} | {edu.duration}
                 </p>
                 <p className="mt-2 text-gray-700 dark:text-gray-200">
-                  {edu.description}
+                  {edu.details}
                 </p>
               </motion.div>
             ))}

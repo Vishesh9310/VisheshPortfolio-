@@ -2,61 +2,13 @@ import React, { useState } from 'react';
 import w3icon from '../../assets/socialmedia/w3school1.png';
 import hricon from '../../assets/socialmedia/hackerrank1.png';
 import nsicon from '../../assets/socialmedia/newtonschool1.png';
-import img from '../../assets/react.svg';
+import { type Project } from '../../types/dataTypes';
+import { useData } from '../../context/DataContext';
 
-
-interface Project {
-  img: string;
-  heading: string;
-  desc: string;
-  about: string;
-  date: string;
-  codebtn: string;
-  previewbtn: string;
-}
 
 const ProjectsSection: React.FC = () => {
   const [activeProject, setActiveProject] = useState<Project | null>(null);
-
-  const projectData: Project[] = [
-    {
-      img,
-      heading: 'Emart',
-      desc: 'E-Commerce ',
-      about: 'A complete e-commerce platform built with React. It includes product listing, shopping cart, and checkout functionality with a clean and modern UI.',
-      date: 'Jan 2024',
-      codebtn: 'https://github.com/Vishesh9310/Emart',
-      previewbtn: 'https://github.com/Vishesh9310/Emart',
-    },
-    {
-      img,
-      heading: 'Skill-Sync-Pro',
-      desc: 'Skill Management & Career Growth Tracker',
-      about: 'A productivity-first React app that combines Skill Tracking, Task Management, Project Portfolio, and Career Growth Monitoring in one clean, user-friendly platform.',
-      date: 'Feb 2024',
-      codebtn: 'https://github.com/Vishesh9310/Skill-Sync-Pro',
-      previewbtn: 'https://github.com/Vishesh9310/Skill-Sync-Pro',
-    },
-    {
-      img,
-      heading: 'Sarthi',
-      desc: 'Hospital Frontend Project',
-      about: 'A full-fledged hospital management frontend built using React, offering appointment scheduling, doctor management, and patient records UI.',
-      date: 'Mar 2024',
-      codebtn: 'https://github.com/Vishesh9310/Sarthi2.0',
-      previewbtn: 'https://github.com/Vishesh9310/Sarthi2.0',
-    },
-    {
-      img,
-      heading: 'COOS-Library',
-      desc: 'E-Book Website',
-      about: 'An online e-book reading and management website with search, categorization, and responsive design for better user experience.',
-      date: 'Apr 2024',
-      codebtn: 'https://github.com/Vishesh9310/e-book-website',
-      previewbtn: 'https://github.com/Vishesh9310/e-book-website',
-    },
-  ];
-
+  const {projectData} = useData();
 
   const problemSolvingData = [
     { img: w3icon, heading: 'W3schools', link: 'https://www.w3profile.com/Vishesh' },

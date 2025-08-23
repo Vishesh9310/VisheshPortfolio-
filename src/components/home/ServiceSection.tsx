@@ -1,41 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaTools, FaUserAstronaut } from 'react-icons/fa';
-import { FolderGit2, Mail } from 'lucide-react';
-
-interface Service {
-  img: React.ElementType; // React component type for icons 
-  heading: string;
-  about: string;
-}
+import { useData } from '../../context/DataContext';
 
 const ServiceSection: React.FC = () => {
-  const serviceData: Service[] = [
-    {
-      img: FaUserAstronaut,
-      heading: 'Web Development',
-      about:
-        'We craft scalable and high-performance web applications tailored to your needs. From simple websites to complex enterprise platforms, our solutions ensure speed, security, and future-ready architecture.',
-    },
-    {
-      img: FaTools,
-      heading: 'Digital Strategy',
-      about:
-        'We help you align technology with business goals. From market research to growth-driven roadmaps, our digital strategies empower brands to thrive in a competitive landscape with data-backed decisions.',
-    },
-    {
-      img: FolderGit2,
-      heading: 'User Experience',
-      about:
-        'Our UX process focuses on clarity, simplicity, and engagement. By understanding user behavior, we design interfaces that are not only beautiful but also intuitive and conversion-driven.',
-    },
-    {
-      img: Mail,
-      heading: 'Web Design',
-      about:
-        'A website is more than visuals—it’s your digital identity. We create futuristic, responsive, and immersive designs that leave a lasting impression while maintaining usability across all devices.',
-    },
-  ];
+  const {serviceData} = useData();
 
   return (
     <div
