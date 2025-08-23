@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  --primary-color: #242424; /* variable define */
+  --secondary-color: #64748b;
+  --font-size-lg: 18px;
+  --dark-background-color: #242424;
+  --dark-text-color: #ffffff;
+  --light-background-color: #ffffff;
+  --light-text-color: #213547;
+
+}
+
+/*Default light mode*/
+body {
+  background-color:  var(--dark-background-color); ;
+  color: var(--dark-text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*darkmode*/
+body.dark-mode {
+  background-color:  var(--light-background-color); ;
+  color: var(--light-text-color);
+}
+
+
+/* body {
+  background-color: #ffffff;
+  color: #213547;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode 
+body.dark-mode {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+} */
