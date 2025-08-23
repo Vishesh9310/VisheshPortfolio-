@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import logo from '../../assets/logo.png'
 import { useLocation } from 'react-router-dom';
 // import { PrimaryButton, SecondaryButton, DangerButton } from "../ui/Buttons";
@@ -9,7 +9,7 @@ const words = ["BCA Undergraduate", "Problem Solver", "Open Source Enthusiast"];
 
 const AboutSection: React.FC = () => {
   const location = useLocation();
-  const sectionRef = useRef(null);
+  const sectionRef = useRef<HTMLDivElement| null>(null);
 
   useEffect(() => {
     if (sectionRef.current) {
