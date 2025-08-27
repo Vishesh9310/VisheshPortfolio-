@@ -13,6 +13,9 @@
 
 /*Default light mode*/
 body {
+  margin: 0px;
+  padding: 0px;
+
   background-color:  var(--dark-background-color); ;
   color: var(--dark-text-color);
   transition: background-color 0.3s ease, color 0.3s ease;

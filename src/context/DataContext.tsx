@@ -6,6 +6,22 @@ import { FolderGit2, Mail } from 'lucide-react';
 import img from '../assets/react.svg'
 import certificate1 from '../assets/certificate/Screenshot (498).png'
 import certificate2 from '../assets/certificate/Screenshot (499).png'
+import certificate3 from '../assets/certificate/Screenshot (500).png'
+import certificate4 from '../assets/certificate/Screenshot (501).png'
+import certificate5 from '../assets/certificate/Screenshot (502).png'
+import certificate6 from '../assets/certificate/Screenshot (503).png'
+import certificate7 from '../assets/certificate/Screenshot (504).png'
+import certificate8 from '../assets/certificate/Screenshot (505).png'
+import certificate9 from '../assets/certificate/Screenshot (506).png'
+import certificate10 from '../assets/certificate/Screenshot (507).png'
+import certificate11 from '../assets/certificate/Screenshot (508).png'
+import certificate12 from '../assets/certificate/Screenshot (509).png'
+import certificate13 from '../assets/certificate/Screenshot (510).png'
+import certificate14 from '../assets/certificate/Screenshot (511).png'
+import certificate15 from '../assets/certificate/Screenshot (512).png'
+import certificate16 from '../assets/certificate/Screenshot (513).png'
+import certificate17 from '../assets/certificate/Postman - Postman API Fundamentals Student Expert - 2024-06-23.png'
+import certificate18 from '../assets/certificate/postman.jpg'
 
 //Static data
 //Experience Section
@@ -101,8 +117,24 @@ const projectData: Project[] = [
 
 //Certificate Section
 const certificationData: Certificate[] = [
-    { img: certificate1, desc: "c++ bootcamp", date: "20/12/2025" },
-    { img: certificate2, desc: "sql bootcamp", date: "20/12/2025" },
+  { img: certificate1, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate2, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate3, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate4, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate5, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate6, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate7, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate8, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate9, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate10, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate11, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate12, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate13, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate14, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate15, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate16, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate17, desc: "hello vishesh", date: "20/12/2025" },
+  { img: certificate18, desc: "hello vishesh", date: "20/12/2025" },
 ];
 
 //Blog Section

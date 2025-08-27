@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
 
   return (
     <section className="text-white bg-gradient-to-r from-black via-purple-950 to-black h-fit px-24 py-30">
-      <h1 className="text-4xl text-center p-10 font-bold">Say Hello</h1>
+      <h1 className="text-4xl text-center p-10 font-bold orbitron">Say Hello</h1>
 
       {/* Form */}
       <form onSubmit={handleSubmit} className="space-y-7">

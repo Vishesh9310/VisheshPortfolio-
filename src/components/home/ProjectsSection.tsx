@@ -9,6 +9,7 @@ import { useData } from '../../context/DataContext';
 const ProjectsSection: React.FC = () => {
   const [activeProject, setActiveProject] = useState<Project | null>(null);
   const {projectData} = useData();
+  const topThreeProject = projectData.slice(0,4);
 
   const problemSolvingData = [
     { img: w3icon, heading: 'W3schools', link: 'https://www.w3profile.com/Vishesh' },
@@ -17,7 +18,7 @@ const ProjectsSection: React.FC = () => {
   ];
 
   return (
-    <section className="h-fit py-20 bg-gradient-to-l from-black via-gray-800 to-black text-white pb-20 space-y-20">
+    <section id='project' className="h-fit py-20 bg-gradient-to-l from-black via-gray-800 to-black text-white pb-20 space-y-20">
 
       {/* Projects Section */}
       <div>
@@ -25,7 +26,7 @@ const ProjectsSection: React.FC = () => {
         <h2 className="text-2xl px-24 font-bold orbitron text-sky-300 mb-24">#Top Projects</h2>
         {/* Projects Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 sm:px-12 lg:px-24 max-w-[1400px] mx-auto">
-          {projectData.map((project, index) => (
+          {topThreeProject.map((project, index) => (
             <div
               key={index}
               className="w-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 hover:bg-gradient-to-l p-0.5 rounded-2xl transition-all cursor-pointer"
