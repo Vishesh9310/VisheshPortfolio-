@@ -91,7 +91,7 @@ const AboutSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-auto h-fit p-0.5 space-y-5 m-5 sm:m-10 lg:m-20 rounded-2xl bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500">
+      <div className="w-auto h-fit p-0.5 space-y-5 m-5 sm:m-5 lg:m-20 rounded-2xl bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500">
         <div
           ref={sectionRef}
           id="about"

@@ -23,9 +23,9 @@ const ProjectsSection: React.FC = () => {
       {/* Projects Section */}
       <div>
         <h2 className="text-3xl sm:text-4xl text-center font-bold orbitron bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 bg-clip-text text-transparent mb-10">Projects</h2>
-        <h2 className="text-2xl px-24 font-bold orbitron text-sky-300 mb-24">#Top Projects</h2>
+        <h2 className="text-2xl px-24 font-bold orbitron text-sky-300 mb-24">#Top Three Projects</h2>
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 sm:px-12 lg:px-24 max-w-[1400px] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 sm:px-12 lg:px-24 max-w-[1400px] mx-auto">
           {topThreeProject.map((project, index) => (
             <div
               key={index}
