@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaJava, FaObjectGroup } from "react-icons/fa";
-import { SiTypescript, SiMongodb, SiMysql, SiExpress, SiPostman, SiGit, SiTailwindcss, SiReact, SiSpring, SiCplusplus, SiC, SiJavascript, SiLeetcode } from "react-icons/si";
+import { SiTypescript, SiMongodb, SiMysql, SiExpress, SiPostman, SiGit, SiTailwindcss, SiSpring, SiCplusplus, SiC, SiJavascript, SiLeetcode } from "react-icons/si";
 import { MdMemory, MdSmartphone } from 'react-icons/md'
 import { BiBrain } from 'react-icons/bi'
 import { AiOutlineBarChart } from 'react-icons/ai'
