@@ -1,8 +1,7 @@
 import { createContext, type ReactNode, useContext } from "react";
 import { type Experience, type Education, type Project, type Certificate, type Blog, type Service } from "../types/dataTypes";
 
-import { FaTools, FaUserAstronaut, FaUserCheck } from 'react-icons/fa';
-import { FolderGit2, Mail } from 'lucide-react';
+import { FaUserCheck } from 'react-icons/fa';
 import img from '../assets/react.svg'
 import certificate1 from '../assets/certificate/Screenshot (498).png'
 import certificate2 from '../assets/certificate/Screenshot (499).png'
