@@ -18,21 +18,22 @@ const ProjectsSection: React.FC = () => {
   ];
 
   return (
-    <section id='project' className="h-fit py-20 bg-gradient-to-l from-black via-gray-800 to-black text-white pb-20 space-y-20">
+    <section id='project' className="h-fit py-20 projects-body pb-20 space-y-20">
 
+      <div>
       {/* Projects Section */}
       <div>
         <h2 className="text-3xl sm:text-4xl text-center font-bold orbitron bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 bg-clip-text text-transparent mb-10">Projects</h2>
-        <h2 className="text-2xl px-24 font-bold orbitron text-sky-300 mb-24">#Top Three Projects</h2>
-        {/* Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 sm:px-12 lg:px-24 max-w-[1400px] mx-auto">
+        <h2 className="text-2xl px-24 font-bold orbitron mb-24">#Top Three Projects</h2>
+        {/* projectgrid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 sm:px-12 lg:px-24">
           {topThreeProject.map((project, index) => (
             <div
               key={index}
               className="w-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 hover:bg-gradient-to-l p-0.5 rounded-2xl transition-all cursor-pointer"
               onClick={() => setActiveProject(project)}
             >
-              <div className="bg-gray-950 h-full w-full rounded-2xl overflow-hidden flex flex-col">
+              <div className="project-body h-full w-full rounded-2xl overflow-hidden flex flex-col">
                 <img
                   src={project.img}
                   alt={project.heading}
@@ -50,10 +51,11 @@ const ProjectsSection: React.FC = () => {
             </div>
           ))}
         </div>
+      </div>
 
         {/* About Section (when project is clicked) */}
         {activeProject && (
-          <div className="max-w-4xl mx-auto mt-16 p-8 bg-slate-900 rounded-2xl shadow-lg">
+          <div className="max-w-4xl mx-auto mt-16 p-8 project-body rounded-2xl shadow-lg">
             <button
               className="float-right text-red-400 text-lg"
               onClick={() => setActiveProject(null)}
@@ -61,8 +63,8 @@ const ProjectsSection: React.FC = () => {
               ✖
             </button>
             <h3 className="text-3xl font-bold italic orbitron mb-4">{activeProject.heading}</h3>
-            <p className="italic text-sky-400 mb-2">{activeProject.desc}</p>
-            <p className="mb-4 text-gray-300">{activeProject.about}</p>
+            <p className="italic text-sky-500 mb-2">{activeProject.desc}</p>
+            <p className="mb-4 ">{activeProject.about}</p>
             <p className="orbitron text-sm mb-4">📅 {activeProject.date}</p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -98,7 +100,7 @@ const ProjectsSection: React.FC = () => {
           {problemSolvingData.map((platform, index) => (
             <a key={index} href={platform.link} target="_blank" rel="noopener noreferrer">
               <div className="w-full h-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 hover:bg-gradient-to-l p-0.5 rounded-2xl transition-all">
-                <div className="bg-gray-950 rounded-2xl overflow-hidden flex flex-col items-center">
+                <div className="project-body rounded-2xl overflow-hidden flex flex-col items-center">
                   <img src={platform.img} alt={platform.heading} className="h-64 w-full object-contain" />
                   <h3 className="p-4 orbitron text-center font-bold italic text-lg">{platform.heading}</h3>
                 </div>

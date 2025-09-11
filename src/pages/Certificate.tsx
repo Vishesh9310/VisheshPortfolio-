@@ -12,17 +12,17 @@ const Certificate:React.FC = () => {
 
   return (
     <section>
-      <div className='bg-gradient-to-r from-black via-purple-950 to-black h-screen flex items-center justify-center text-white'>
+      <div className='certificates-body h-screen flex items-center justify-center'>
         <h1 className='text-2xl md:text-4xl lg:text-6xl xl:text-9xl tracking-[0.1em] orbitron'>ACHIEVEMENTS</h1>
       </div>
 
       {/* Certifications */}
-      <div className='space-y-20 text-white bg-gradient-to-r from-black via-purple-950 to-black h-fit p-24'>
+      <div className='space-y-20 certificates-body h-fit p-24'>
         <h1 className='text-center font-bold orbitron tracking-[0.1em] text-4xl p-5'>Certifications</h1>
         <div className='grid grid-cols-2 gap-24'>
           {
             certificationData.map((item, index) => (
-              <div key={index} className='w-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 hover:bg-gradient-to-l p-0.5 rounded-2xl shadow-xl shadow-purple-500 hover:shadow-cyan-500'>
+              <div key={index} className='w-full certificate-main hover:bg-gradient-to-l p-0.5 rounded-2xl shadow-xl shadow-purple-500 hover:shadow-cyan-500'>
                 <div className='bg-gray-950 h-full w-full rounded-2xl overflow-hidden'>
                   <img src={item.img} alt={`Certificate ${index + 1}`} className='h-80 w-full' />
                   <div className='p-5 space-y-2'>
@@ -37,13 +37,13 @@ const Certificate:React.FC = () => {
       </div>
 
       {/* clg achievements */}
-      <div className='text-white bg-[#0e0115] h-fit p-24 space-y-20'>
+      <div className='achievement-bg h-fit p-24 space-y-20'>
         <h1 className='text-center text-4xl tracking-[0.1em] orbitron'>College Achievements</h1>
         <ul className='grid grid-cols-2 gap-24 px-24'>
           {
             certificationData.map((item, index) => (
               <li key={index} className='w-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 hover:bg-gradient-to-l p-0.5 rounded-2xl shadow-lg shadow-purple-500 hover:shadow-cyan-500'>
-                <div className='bg-gray-950 h-full w-full rounded-2xl overflow-hidden'>
+                <div className='certificate-main h-full w-full rounded-2xl overflow-hidden'>
                   <img src={item.img} alt={`Certificate ${index + 1}`} className='h-80 w-full' />
                   <div className='p-5 space-y-2'>
                     <p className='tracking-wider'>{item.desc}</p>
@@ -57,13 +57,13 @@ const Certificate:React.FC = () => {
       </div>
 
       {/* extra */}
-      <div className='text-white bg-gray-950 h-fit p-24 space-y-20'>
+      <div className='achievement-bg h-fit p-24 space-y-20'>
         <h1 className='text-center text-4xl tracking-[0.1em] orbitron'>Feed</h1>
         <div className='grid grid-cols-2 gap-24 px-24'>
           {
             feedData.map((item, index) => (
               <div key={index} className='w-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 hover:bg-gradient-to-l p-0.5 rounded-2xl shadow-lg shadow-purple-500 hover:shadow-cyan-500'>
-                <div className='bg-gray-950 h-full w-full rounded-2xl overflow-hidden'>
+                <div className='certificate-main h-full w-full rounded-2xl overflow-hidden'>
                   <img src={item.img} alt="" className='h-80 w-full' />
                   <p className='p-5  tracking-wider'>{item.desc}</p>
                 </div>

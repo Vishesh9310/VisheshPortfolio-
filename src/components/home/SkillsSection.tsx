@@ -9,13 +9,13 @@ import { AiOutlineBarChart } from 'react-icons/ai'
 const SkillsSection: React.FC = () => {
 
   return (
-      <div id='skills' className='bg-slate-950 h-fit text-white py-14 px-5 space-y-20'>
+      <div id='skills' className='skills-body h-fit py-14 px-5 space-y-20'>
         <div className='text-center w-full'>
           <h2 className='text-6xl font-bold bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 text-transparent bg-clip-text w-fit mx-auto orbitron'>Skills</h2>
           <p className='w-full italic'>Crafting responsive websites and dynamic web apps with modern technologies. Let's build something amazing together!</p>
         </div>
         <div className='w-full space-y-20'>
-          <h2 className='orbitron mx-auto font-bold italic text-lg tracking-[0.2em] border-b-2 w-fit border-white'>Frontend Development</h2>
+          <h2 className='orbitron mx-auto font-bold italic text-lg tracking-[0.2em] border-b-2 w-fit '>Frontend Development</h2>
           <div className='grid grid-cols-3 gap-x-5 gap-y-10 p-5 w-full place-items-center'>
             <div className=' text-center'>
               <FaHtml5 title="HTML" className='text-orange-600 mb-3 h-9 w-fit m-auto'/>
@@ -45,7 +45,7 @@ const SkillsSection: React.FC = () => {
         </div>
 
         <div className='w-full space-y-20'>
-          <h2 className='orbitron mx-auto font-bold italic text-lg tracking-[0.2em] border-b-2 w-fit border-white'>Backend Development</h2>
+          <h2 className='orbitron mx-auto font-bold italic text-lg tracking-[0.2em] border-b-2 w-fit'>Backend Development</h2>
           <div className='grid grid-cols-3 gap-x-5 gap-y-10 p-5 w-full place-items-center'>
             <div className=' text-center'>
               <FaNodeJs title="Node.js" className='text-green-600 mb-3 h-9 w-fit m-auto'/>
@@ -75,7 +75,7 @@ const SkillsSection: React.FC = () => {
         </div>
 
         <div className='w-full space-y-20'>
-          <h2 className='orbitron mx-auto font-bold italic text-lg tracking-[0.2em] border-b-2 w-fit border-white'>Programming Languages</h2>
+          <h2 className='orbitron mx-auto font-bold italic text-lg tracking-[0.2em] border-b-2 w-fit'>Programming Languages</h2>
           <div className='grid grid-cols-3 w-full gap-x-5 gap-y-10 p-5 place-items-center'>
             <div className=' text-center'>
               <SiC title="C" className='text-white mb-3 h-8 w-fit m-auto'/>
@@ -97,7 +97,7 @@ const SkillsSection: React.FC = () => {
         </div>
 
         <div className='w-full space-y-20'>
-          <h2 className='orbitron mx-auto font-bold italic text-lg tracking-[0.2em] border-b-2 w-fit border-white'>Database Technologies</h2>
+          <h2 className='orbitron mx-auto font-bold italic text-lg tracking-[0.2em] border-b-2 w-fit'>Database Technologies</h2>
           <div className='grid grid-cols-3 w-full gap-x-5 gap-y-10 p-5 place-items-center'>
             <div className=' text-center'>
               <SiMysql title="MySQL" className='text-white mb-3 h-9 w-fit m-auto'/>
@@ -115,7 +115,7 @@ const SkillsSection: React.FC = () => {
         </div>
 
         <div className='w-full space-y-20'>
-          <h2 className='orbitron mx-auto font-bold italic text-lg tracking-[0.2em] border-b-2 w-fit border-white'>Algorithms & Problem Solving</h2>
+          <h2 className='orbitron mx-auto font-bold italic text-lg tracking-[0.2em] border-b-2 w-fit'>Algorithms & Problem Solving</h2>
           <div className='grid grid-cols-2 w-full gap-x-5 gap-y-10 p-5 place-items-center'>
             <div className=' text-center'>
               <SiLeetcode title="MongoDB"  className='text-yellow-200 mb-3 h-9 w-fit m-auto'/>
@@ -129,7 +129,7 @@ const SkillsSection: React.FC = () => {
         </div>
 
         <div className='w-full space-y-20'>
-          <h2 className='orbitron mx-auto font-bold italic text-lg tracking-[0.2em] border-b-2 w-fit border-white'>Other Skills</h2>
+          <h2 className='orbitron mx-auto font-bold italic text-lg tracking-[0.2em] border-b-2 w-fit'>Other Skills</h2>
           <div className='grid grid-cols-3 w-full gap-x-5 gap-y-10 p-5 place-items-center'>
             <div className=' text-center'>
               <AiOutlineBarChart title="MongoDB"  className='text-yellow-200 mb-3 h-9 w-fit m-auto'/>

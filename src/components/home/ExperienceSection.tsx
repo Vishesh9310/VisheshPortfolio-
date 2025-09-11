@@ -6,10 +6,10 @@ const ExperienceSection: React.FC = () => {
   const {experience, education} = useData();
 
   return (
-    <div className="min-h-fit bg-gray-50 dark:bg-gray-900 py-12 px-6">
+    <div className="min-h-fit py-12 px-6">
       {/* Header */}
       <div className="flex justify-between items-center max-w-4xl mx-auto mb-12">
-        <h1 className="text-3xl font-bold text-gray-800 dark:text-white">
+        <h1 className="text-3xl font-bold orbitron lg:text-5xl">
           Experience & Resume
         </h1>
       </div>
@@ -17,7 +17,7 @@ const ExperienceSection: React.FC = () => {
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
         {/* Experience Timeline */}
         <div>
-          <h2 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-100">
+          <h2 className="text-2xl font-semibold mb-6 experience-text orbitron ">
             Work Experience
           </h2>
           <div className="space-y-8 border-l-2 border-purple-400 pl-6">
@@ -30,14 +30,14 @@ const ExperienceSection: React.FC = () => {
                 viewport={{ once: true }}
                 className="relative"
               >
-                <div className="absolute -left-3 w-6 h-6 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full border-2 border-white dark:border-gray-900 mr-5"></div>
-                <h3 className="pl-5 text-lg font-semibold text-purple-600 dark:text-purple-400">
+                <div className="absolute -left-3 w-6 h-6 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full mr-5"></div>
+                <h3 className="pl-5 text-lg font-semibold experience-text orbitron italic">
                   {exp.role}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                <p className=" text-sm">
                   {exp.company} | {exp.duration}
                 </p>
-                <p className="mt-2 text-gray-700 dark:text-gray-200">
+                <p className="mt-2 experience-text">
                   {exp.description}
                 </p>
               </motion.div>
@@ -47,7 +47,7 @@ const ExperienceSection: React.FC = () => {
 
         {/* Education */}
         <div>
-          <h2 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-100">
+          <h2 className="text-2xl font-semibold mb-6 orbitron experience-text">
             Education
           </h2>
           <div className="space-y-8 border-l-2 border-cyan-400 pl-6">
@@ -60,14 +60,14 @@ const ExperienceSection: React.FC = () => {
                 viewport={{ once: true }}
                 className="relative"
               >
-                <div className="absolute -left-3 w-6 h-6 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full border-2 border-white dark:border-gray-900"></div>
-                <h3 className="pl-5 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                <div className="absolute -left-3 w-6 h-6 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"></div>
+                <h3 className="pl-5 text-lg font-semibold orbitron italic experience-text">
                   {edu.degree}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                <p className="experience-text text-sm">
                   {edu.institution} | {edu.duration}
                 </p>
-                <p className="mt-2 text-gray-700 dark:text-gray-200">
+                <p className="mt-2 experience-text">
                   {edu.details}
                 </p>
               </motion.div>

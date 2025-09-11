@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import logo from '../../assets/logo.png'
+import logo from '../../assets/me/logobg.png'
 import { useLocation } from 'react-router-dom';
 
 const words = ["BCA Undergraduate", "Problem Solver", "Open Source Enthusiast"];
@@ -62,11 +62,11 @@ const AboutSection: React.FC = () => {
   };
 
   return (
-    <div className='h-fit bg-gradient-to-l to-black via-gray-800 from-black p-10'>
+    <div className='h-fit service-body p-[5%] pt-14'>
       <div className='lg:flex lg:justify-between'>
         <div className='font-bold space-y-4 w-full lg:w-2/3 lg:content-center text-center lg:text-left'>
-          <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">Hi,<br /> I'm <span className='text-gray-400'>VISHESH</span></h2>
-          <p className='text-3xl'><span className='text-gray-400'>Mern Stack</span> Developer</p>
+          <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">Hi,<br /> I'm <span className='text-main'>VISHESH</span></h2>
+          <p className='text-3xl'><span className='text-main'>Mern Stack</span> Developer</p>
           <motion.p
             className="text-xl md:text-3xl font-semibold h-10 mb-6  bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 bg-clip-text text-transparent"
             initial={{ opacity: 0 }}
@@ -75,18 +75,18 @@ const AboutSection: React.FC = () => {
           >
             {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
           </motion.p>
-          <div className="flex justify-center lg:justify-start space-x-6 text-gray-400 text-2xl">
+          <div className="flex justify-center lg:justify-start space-x-6 text-main text-2xl">
             <a href="https://github.com/Vishesh9310" target="_blank" rel="noreferrer" className='hover:text-white'><FaGithub /></a>
             <a href="https://www.linkedin.com/in/vishesh-b8a2b72a3" target="_blank" rel="noreferrer" className='hover:text-sky-500'><FaLinkedin /></a>
             <a href="https://www.instagram.com/sayme_vishesh/" target="_blank" rel="noreferrer" className='hover:text-pink-500'><FaInstagram /></a>
             <a href="https://twitter.com/" target="_blank" rel="noreferrer" className='hover:text-blue-300'><FaTwitter /></a>
           </div>
           <div className='flex justify-center lg:justify-start gap-5 pt-4'>
-            <a href='/contact' className='bg-none border-2 border-gray-400 rounded-2xl px-3 py-1'>Contact Me</a>
-            <button onClick={handleDownload} className='bg-gray-400 border-2 text-black border-gray-400 rounded-2xl px-3 py-1'>Get Resume</button>
+            <a href='/contact' className='bg-none border-2 text-main  rounded-2xl px-3 py-1'>Contact Me</a>
+            <button onClick={handleDownload} className='bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 text-white rounded-2xl px-3 py-1'>Get Resume</button>
           </div>
         </div>
-        <div className='lg:w-1/2 sm:w-full lg:content-center sm:py-10 lg:pt-30 '>
+        <div className='lg:w-1/2 sm:w-full lg:content-center sm:py-10 lg:pt-30'>
           <img src={logo} alt="full stack developer" className="w-[300px] md:w-[500px] lg:w-[450px] xl:w-[500px] rounded-lg object-cover sm:mx-auto" />
         </div>
       </div>
@@ -95,7 +95,7 @@ const AboutSection: React.FC = () => {
         <div
           ref={sectionRef}
           id="about"
-          className="bg-gradient-to-l from-black via-gray-900 to-black h-fit p-6 sm:p-10 space-y-5 rounded-2xl w-auto"
+          className="about-me-body h-fit p-6 sm:p-10 space-y-5 rounded-2xl w-auto"
         >
           <h2 className="text-2xl font-bold mb-10 sm:mb-20">About Me:</h2>
 
@@ -127,8 +127,8 @@ const AboutSection: React.FC = () => {
             </p>
 
             {/* Right Code Block */}
-            <div className="bg-[#0d1021] p-4 sm:p-6 rounded-xl shadow-lg text-xs sm:text-sm font-mono w-full lg:w-1/3 border border-[#222] overflow-x-auto">
-              <pre className="text-yellow-400 whitespace-pre-wrap">
+            <div className="code-box p-4 sm:p-6 rounded-xl shadow-lg text-xs sm:text-sm font-mono w-full lg:w-1/3 border border-[#222] overflow-x-auto">
+              <pre className="code-box whitespace-pre-wrap">
                 {`const coder = {
   name: 'Vishesh',
   skills: ['React', 'TypeScript', 'Tailwind', 'Java',

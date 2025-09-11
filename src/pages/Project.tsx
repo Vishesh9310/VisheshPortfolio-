@@ -80,7 +80,7 @@ const Project: React.FC = () => {
   ];
 
   return (
-    <section className="h-fit py-20 bg-gradient-to-l from-black via-gray-800 to-black text-white pb-20 space-y-20">
+    <section className="h-fit py-20 projects-body pb-20 space-y-20">
       {/* Projects Section */}
       <div>
         <h2 className="text-3xl sm:text-4xl text-center font-bold orbitron bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 bg-clip-text text-transparent mb-10">
@@ -92,7 +92,7 @@ const Project: React.FC = () => {
               key={index}
               className="w-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 hover:bg-gradient-to-l p-0.5 rounded-2xl transition-all"
             >
-              <div className="bg-gray-950 h-full w-full rounded-2xl overflow-hidden flex flex-col">
+              <div className="project-body h-full w-full rounded-2xl overflow-hidden flex flex-col">
                 <img src={project.img} alt={project.heading} className="h-64 w-full object-cover" />
                 <div className="p-4 flex-1 space-y-2">
                   <h3 className="text-center font-bold italic text-lg orbitron">{project.heading}</h3>
@@ -132,7 +132,7 @@ const Project: React.FC = () => {
           {problemSolvingData.map((platform, index) => (
             <a key={index} href={platform.link} target="_blank" rel="noopener noreferrer">
               <div className="w-full h-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 hover:bg-gradient-to-l p-0.5 rounded-2xl transition-all">
-                <div className="bg-gray-950 rounded-2xl overflow-hidden flex flex-col items-center">
+                <div className="project-body rounded-2xl overflow-hidden flex flex-col items-center">
                   <img src={platform.img} alt={platform.heading} className="h-64 w-full object-contain" />
                   <h3 className="p-4 orbitron text-center font-bold italic text-lg">{platform.heading}</h3>
                 </div>

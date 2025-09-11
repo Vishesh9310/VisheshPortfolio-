@@ -30,6 +30,8 @@ export interface Certificate {
 
 export interface Blog {
   id: number;
+  img: string;
+  cat: string;
   title: string;
   content: string;
   tags: string[];
