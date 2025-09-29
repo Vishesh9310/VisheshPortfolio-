@@ -2,7 +2,6 @@ import React from 'react';
 import w3icon from '../assets/socialmedia/w3school1.png';
 import hricon from '../assets/socialmedia/hackerrank1.png';
 import nsicon from '../assets/socialmedia/newtonschool1.png';
-import img from '../assets/react.svg';
 import {useData} from '../context/DataContext'
 
 interface Project {
