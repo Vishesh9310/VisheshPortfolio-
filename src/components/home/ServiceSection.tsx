@@ -7,8 +7,9 @@ const ServiceSection: React.FC = () => {
   return(
     <div  id="skills" className="h-fit py-20 px-6 sm:px-12 lg:px-24 service-body ">
       <h2 className='text-4xl sm:text-5xl md:text-6xl font-bold mb-12 sm:mb-16 bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 text-transparent bg-clip-text w-fit mx-auto orbitron'>Services</h2>
-      
-       <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className='grid lg:grid-cols-2 md:grid-col-1 gap-24'>
+        </div>
+       <div className="mx-auto grid md:grid-cols-1 lg:grid-cols-3 gap-8">
        {serviceData.map((service, index) => {
          const Icon = service.img;
          return (

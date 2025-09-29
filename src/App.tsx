@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Certificate from "./pages/Certificate";
 import Project from "./pages/Project";
 import Blog from "./pages/Blog";
+import FullProject from "./pages/FullProject";
 
 const Layout: React.FC = () => {
   return (
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
       { path: "contact", element: <Contact /> },
       { path: "projects", element: <Project/>},
       { path: "certificate", element: <Certificate/>},
+      { path: "projects/:id", element: <FullProject/>},
       { path: "blog/:id", element: <Blog/>},
     ],
   },

@@ -3,6 +3,7 @@ import w3icon from '../assets/socialmedia/w3school1.png';
 import hricon from '../assets/socialmedia/hackerrank1.png';
 import nsicon from '../assets/socialmedia/newtonschool1.png';
 import {useData} from '../context/DataContext'
+import { NavLink } from 'react-router-dom';
 
 interface Project {
   img: string;
@@ -33,9 +34,10 @@ const Project: React.FC = () => {
           Projects
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 sm:px-12 lg:px-24">
-          {projectData.map((project, index) => (
-            <div
-              key={index}
+          {projectData.map((project) => (
+            <NavLink
+              key={project.id}
+              to={`/projects/${project.id}`}
               className="w-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 hover:bg-gradient-to-l p-0.5 rounded-2xl transition-all"
             >
               <div className="project-body h-full w-full rounded-2xl overflow-hidden flex flex-col">
@@ -64,7 +66,7 @@ const Project: React.FC = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </NavLink>
           ))}
         </div>
       </div>

@@ -30,12 +30,12 @@ const SkillsSection: React.FC = () => {
             <h2>JavaScript(ES6+)</h2>
           </div>
           <div className=' text-center'>
-            <FaReact title="React" className='text-sky-300 mb-3 h-9 w-fit m-auto' />
-            <h2>React.js</h2>
-          </div>
-          <div className=' text-center'>
             <SiTailwindcss title="HTML" className='text-sky-600 mb-3 h-9 w-fit m-auto' />
             <h2>TailwindCSS</h2>
+          </div>
+          <div className=' text-center'>
+            <FaReact title="React" className='text-sky-300 mb-3 h-9 w-fit m-auto' />
+            <h2>React.js</h2>
           </div>
           <div className=' text-center'>
             <SiTypescript title="TypeScript" className='text-blue-500 mb-3 h-8 w-fit m-auto' />

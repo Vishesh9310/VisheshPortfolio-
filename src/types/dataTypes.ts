@@ -13,6 +13,7 @@ export interface Education {
 }
 
 export interface Project {
+  id: number;
   img: string;
   heading: string;
   desc: string;

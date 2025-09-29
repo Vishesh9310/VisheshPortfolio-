@@ -154,6 +154,7 @@ const education: Education[] = [
 //Project Section
 const projectData: Project[] = [
   {
+    id: 1,
     img,
     heading: 'Emart',
     desc: 'E-Commerce ',
@@ -163,6 +164,7 @@ const projectData: Project[] = [
     previewbtn: 'https://github.com/Vishesh9310/Emart',
   },
   {
+    id: 2,
     img,
     heading: 'Skill-Sync-Pro',
     desc: 'Skill Management & Career Growth Tracker',
@@ -172,6 +174,7 @@ const projectData: Project[] = [
     previewbtn: 'https://github.com/Vishesh9310/Skill-Sync-Pro',
   },
   {
+    id: 3,
     img,
     heading: 'Sarthi',
     desc: 'Hospital Frontend Project',
@@ -181,6 +184,7 @@ const projectData: Project[] = [
     previewbtn: 'https://github.com/Vishesh9310/Sarthi2.0',
   },
   {
+    id: 4,
     img,
     heading: 'COOS-Library',
     desc: 'E-Book Website',
