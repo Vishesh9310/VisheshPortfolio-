@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useData } from "../context/DataContext";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Blog: React.FC = () => {
   const {id} = useParams<{id: string}>();
@@ -10,6 +11,7 @@ const Blog: React.FC = () => {
   if(!blog){
     return <div className="pt-20">Blog not found</div>
   }
+
   
   return (
     <div className="pt-20 text-center w-full space-y-10 p-[5%]">
@@ -28,6 +30,7 @@ const Blog: React.FC = () => {
           </span>
         ))}
       </div>
+      <ScrollToTop/>
     </div>
   );
 };

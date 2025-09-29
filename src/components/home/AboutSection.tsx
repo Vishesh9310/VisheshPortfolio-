@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import logo from '../../assets/me/logobg.png'
 import { useLocation } from 'react-router-dom';
+import Vishesh_Resume from '../../assets/resume/Vishesh 2023-26.pdf'
 
 const words = ["BCA Undergraduate", "Problem Solver", "Open Source Enthusiast"];
 
@@ -54,7 +55,7 @@ const AboutSection: React.FC = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = "/resume.pdf";
+    link.href = Vishesh_Resume;
     link.download = "Vishesh_Resume.pdf";
     document.body.appendChild(link);
     link.click();
@@ -66,7 +67,7 @@ const AboutSection: React.FC = () => {
       <div className='lg:flex lg:justify-between'>
         <div className='font-bold space-y-4 w-full lg:w-2/3 lg:content-center text-center lg:text-left'>
           <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">Hi,<br /> I'm <span className='text-main'>VISHESH</span></h2>
-          <p className='text-3xl'><span className='text-main'>Mern Stack</span> Developer</p>
+          <p className='text-3xl'><span className='text-main'>Software</span> Developer</p>
           <motion.p
             className="text-xl md:text-3xl font-semibold h-10 mb-6  bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 bg-clip-text text-transparent"
             initial={{ opacity: 0 }}

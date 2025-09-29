@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import { type Blog } from "../types/dataTypes";
 import { useData } from "../context/DataContext";
 import { Link } from "react-router-dom";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Blogs: React.FC = () => {
   const { blogs } = useData();
@@ -125,6 +126,7 @@ const Blogs: React.FC = () => {
           </div>
         </div>
       </div>
+      <ScrollToTop/>
     </div>
   );
 };

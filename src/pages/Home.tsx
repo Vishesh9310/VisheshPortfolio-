@@ -1,7 +1,6 @@
 import React from 'react';
 import AboutSection from '../components/home/AboutSection';
 import ExperienceSection from '../components/home/ExperienceSection';
-// import EducationSection from '../components/home/EducationSection';
 import SkillsSection from '../components/home/SkillsSection';
 import ProjectsSection from '../components/home/ProjectsSection';
 import BlogSection from '../components/home/BlogSection';
@@ -16,7 +15,6 @@ const Home: React.FC = () => {
     <>
       <AboutSection/>
       <ExperienceSection/>
-      {/* <EducationSection/> */}
       <SkillsSection />
       <ProjectsSection />
       <Certificates/>

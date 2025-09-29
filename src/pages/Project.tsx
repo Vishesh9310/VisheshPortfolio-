@@ -3,6 +3,7 @@ import w3icon from '../assets/socialmedia/w3school1.png';
 import hricon from '../assets/socialmedia/hackerrank1.png';
 import nsicon from '../assets/socialmedia/newtonschool1.png';
 import img from '../assets/react.svg';
+import {useData} from '../context/DataContext'
 
 interface Project {
   img: string;
@@ -14,64 +15,10 @@ interface Project {
 }
 
 const Project: React.FC = () => {
-  const projectData: Project[] = [
-    {
-      img,
-      heading: 'KeepNotes',
-      about: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, mollitia.',
-      date: 'Date',
-      codebtn: 'https://github.com/Vishesh9310/KeepNotes',
-      previewbtn: 'https://github.com/Vishesh9310/KeepNotes',
-    },
-    {
-      img,
-      heading: 'Sarthi 2.0',
-      about: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, mollitia.',
-      date: 'Date',
-      codebtn: 'https://github.com/Vishesh9310/Sarthi2.0',
-      previewbtn: 'https://github.com/Vishesh9310/Sarthi2.0',
-    },
-    {
-      img,
-      heading: 'E-Book website',
-      about: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, mollitia.',
-      date: 'Date',
-      codebtn: 'https://github.com/Vishesh9310/e-book-website',
-      previewbtn: 'https://github.com/Vishesh9310/e-book-website',
-    },
-    {
-      img,
-      heading: 'Salon website',
-      about: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, mollitia.',
-      date: 'Date',
-      codebtn: 'https://github.com/Vishesh9310/salon-website',
-      previewbtn: 'https://github.com/Vishesh9310/salon-website',
-    },
-    {
-      img,
-      heading: 'Avviare site replica',
-      about: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, mollitia.',
-      date: 'Date',
-      codebtn: 'https://github.com/Vishesh9310/Avviare_site_demo',
-      previewbtn: 'https://github.com/Vishesh9310/Avviare_site_demo',
-    },
-    {
-      img,
-      heading: 'Calculator',
-      about: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, mollitia.',
-      date: 'Date',
-      codebtn: 'https://github.com/Vishesh9310/CodeAlpha_Calculator',
-      previewbtn: 'https://github.com/Vishesh9310/CodeAlpha_Calculator',
-    },
-    {
-      img,
-      heading: 'Image Gallery',
-      about: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, mollitia.',
-      date: 'Date',
-      codebtn: 'https://github.com/Vishesh9310/CodeAlpha_Image_Galley',
-      previewbtn: 'https://github.com/Vishesh9310/CodeAlpha_Image_Galley',
-    },
-  ];
+
+  const {projectData} = useData();
+
+
 
   const problemSolvingData = [
     { img: w3icon, heading: 'W3schools', link: 'https://www.w3profile.com/Vishesh' },

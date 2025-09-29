@@ -9,7 +9,7 @@ import { useData } from '../../context/DataContext';
 const ProjectsSection: React.FC = () => {
   const [activeProject, setActiveProject] = useState<Project | null>(null);
   const {projectData} = useData();
-  const topThreeProject = projectData.slice(0,4);
+  const topThreeProject = projectData.slice(0,3);
 
   const problemSolvingData = [
     { img: w3icon, heading: 'W3schools', link: 'https://www.w3profile.com/Vishesh' },
