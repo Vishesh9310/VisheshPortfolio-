@@ -8,7 +8,7 @@ import Certificate from "./pages/Certificate";
 import Project from "./pages/Project";
 import Blog from "./pages/Blog";
 import FullProject from "./pages/FullProject";
-import FullCertificate from "./pages/fullCertificate";
+import CertificateFull from "./pages/CertificateFull";
 
 const Layout: React.FC = () => {
   return (
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
       { path: "certificate", element: <Certificate/>},
       { path: "projects/:id", element: <FullProject/>},
       { path: "blog/:id", element: <Blog/>},
-      { path: "certificate/:id", element: <FullCertificate/>},
+      { path: "certificate/:id", element: <CertificateFull/>},
     ],
   },
 ]);

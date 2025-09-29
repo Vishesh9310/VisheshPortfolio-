@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useData } from "../context/DataContext";
 import ScrollToTop from "../components/ScrollToTop";
 
-const FullCertificate: React.FC = () => {
+const CertificateFull: React.FC = () => {
     const { id } = useParams<{ id: string }>();
     const { certificationData } = useData();
 
@@ -38,4 +38,4 @@ const FullCertificate: React.FC = () => {
     );
 };
 
-export default FullCertificate;
+export default CertificateFull;
