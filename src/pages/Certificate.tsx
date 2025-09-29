@@ -1,9 +1,10 @@
 import React from 'react'
 import img from '../assets/1.jpg'
 import { useData } from '../context/DataContext';
+import { NavLink } from 'react-router-dom';
 
-const Certificate:React.FC = () => {
-  const {certificationData} = useData();
+const Certificate: React.FC = () => {
+  const { certificationData, colleageAchievementData } = useData();
 
   const feedData = [
     { img: img, desc: "lorem ipsum dolor, sit amet consectetur adipisicing elit" },
@@ -23,13 +24,13 @@ const Certificate:React.FC = () => {
           {
             certificationData.map((item, index) => (
               <div key={index} className='w-full certificate-main hover:bg-gradient-to-l p-0.5 rounded-2xl shadow-xl shadow-purple-500 hover:shadow-cyan-500'>
-                <div className='bg-gray-950 h-full w-full rounded-2xl overflow-hidden'>
+                < NavLink to={`/certificate/${item.id}`} className='bg-gray-950 h-full w-full rounded-2xl overflow-hidden'>
                   <img src={item.img} alt={`Certificate ${index + 1}`} className='h-80 w-full' />
                   <div className='p-5 space-y-2'>
                     <p className='tracking-wider'>{item.desc}</p>
                     <h2 className='orbitron'>{item.date}</h2>
                   </div>
-                </div>
+                </NavLink>
               </div>
             ))
           }
@@ -41,10 +42,12 @@ const Certificate:React.FC = () => {
         <h1 className='text-center text-4xl tracking-[0.1em] orbitron'>College Achievements</h1>
         <ul className='grid grid-cols-2 gap-24 px-24'>
           {
-            certificationData.map((item, index) => (
+            colleageAchievementData.map((item, index) => (
               <li key={index} className='w-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 hover:bg-gradient-to-l p-0.5 rounded-2xl shadow-lg shadow-purple-500 hover:shadow-cyan-500'>
                 <div className='certificate-main h-full w-full rounded-2xl overflow-hidden'>
-                  <img src={item.img} alt={`Certificate ${index + 1}`} className='h-80 w-full' />
+                  < NavLink to={`/certificate/${item.id}`} >
+                    <img src={item.img} alt={`Certificate ${index + 1}`} className='h-80 w-full' />
+                  </NavLink>
                   <div className='p-5 space-y-2'>
                     <p className='tracking-wider'>{item.desc}</p>
                     <h2 className='orbitron'>{item.date}</h2>

@@ -2,7 +2,7 @@ import React from 'react';
 import w3icon from '../assets/socialmedia/w3school1.png';
 import hricon from '../assets/socialmedia/hackerrank1.png';
 import nsicon from '../assets/socialmedia/newtonschool1.png';
-import {useData} from '../context/DataContext'
+import { useData } from '../context/DataContext'
 import { NavLink } from 'react-router-dom';
 
 interface Project {
@@ -16,7 +16,7 @@ interface Project {
 
 const Project: React.FC = () => {
 
-  const {projectData} = useData();
+  const { projectData } = useData();
 
 
 
@@ -35,18 +35,19 @@ const Project: React.FC = () => {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 sm:px-12 lg:px-24">
           {projectData.map((project) => (
-            <NavLink
+            <div
               key={project.id}
-              to={`/projects/${project.id}`}
               className="w-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 hover:bg-gradient-to-l p-0.5 rounded-2xl transition-all"
             >
               <div className="project-body h-full w-full rounded-2xl overflow-hidden flex flex-col">
-                <img src={project.img} alt={project.heading} className="h-64 w-full object-cover" />
-                <div className="p-4 flex-1 space-y-2">
-                  <h3 className="text-center font-bold italic text-lg orbitron">{project.heading}</h3>
-                  <p className="text-sm">{project.about}</p>
-                  <p className="orbitron text-sm">{project.date}</p>
-                </div>
+                <NavLink key={project.id} to={`/projects/${project.id}`} >
+                  <img src={project.img} alt={project.heading} className="h-64 w-full object-cover" />
+                  <div className="p-4 flex-1 space-y-2">
+                    <h3 className="text-center font-bold italic text-lg orbitron">{project.heading}</h3>
+                    <p className="text-sm text-blue-500">{project.about}</p>
+                    <p className="orbitron text-sm">{project.date}</p>
+                  </div>
+                </NavLink>
                 <div className="flex flex-col sm:flex-row justify-evenly gap-3 p-4">
                   <a
                     href={project.codebtn}
@@ -66,7 +67,7 @@ const Project: React.FC = () => {
                   </a>
                 </div>
               </div>
-            </NavLink>
+            </div>
           ))}
         </div>
       </div>

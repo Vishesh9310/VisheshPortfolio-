@@ -32,10 +32,10 @@ const FullProject: React.FC = () => {
 
             {/* Heading & Description */}
             <div className="text-center space-y-4">
-                <h1 className="text-4xl sm:text-5xl font-extrabold">
+                <h1 className="text-4xl sm:text-5xl font-extrabold text-purple-600">
                     {project.heading}
                 </h1>
-                <h3 className="text-lg sm:text-xl">{project.desc}</h3>
+                <h3 className="text-lg sm:text-xl text-purple-500">{project.desc}</h3>
                 <p className="leading-relaxed">{project.about}</p>
             </div>
 

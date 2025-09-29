@@ -1,15 +1,15 @@
 export interface Experience {
-    role: string;
-    company: string;
-    duration: string;
-    description: string;
+  role: string;
+  company: string;
+  duration: string;
+  description: string;
 }
 
 export interface Education {
-    degree: string;
-    institution: string;
-    duration: string;
-    details: string;
+  degree: string;
+  institution: string;
+  duration: string;
+  details: string;
 }
 
 export interface Project {
@@ -24,9 +24,19 @@ export interface Project {
 }
 
 export interface Certificate {
-    img: string;
-    desc: string;
-    date: string;
+  id: number;
+  img: string;
+  name: string;
+  desc: string;
+  date: string;
+}
+
+export interface ColleageAchievement{
+  id: number;
+  img: string;
+  name: string;
+  desc: string;
+  date: string;
 }
 
 export interface Blog {
