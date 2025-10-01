@@ -36,9 +36,9 @@ const FeedSlider: React.FC = () => {
   if (feedData.length === 0) return <p>No feed data available.</p>;
 
   return (
-    <div className="w-full mx-auto px-[2%] mt-8 h-[66vh]">
-      <div className="relative overflow-hidden h-[56vh] rounded-2xl" onMouseEnter={stopAutoSlide} onMouseLeave={startAutoSlide}>
-        <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}>
+    <div className="w-full mx-auto px-[2%] mt-[10%] h-[66vh]">
+      <div className="relative overflow-hidden rounded-2xl" onMouseEnter={stopAutoSlide} onMouseLeave={startAutoSlide}>
+        <div className="flex transition-transform px-2 duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}>
           {feedData.map((feed, index) => (
             <div
               key={feed.name}
