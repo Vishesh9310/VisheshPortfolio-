@@ -29,8 +29,7 @@ const CertificateFull: React.FC = () => {
                 <h1 className="text-4xl sm:text-5xl font-extrabold text-purple-600">
                     {certificate.name}
                 </h1>
-                <h3 className="text-lg sm:text-xl text-purple-500">{certificate.desc}</h3>
-                <p className="leading-relaxed">{certificate.desc}</p>
+                {certificate.desc ? <p className="leading-relaxed">{certificate.desc}</p> : <br/> }
             </div>
 
             <ScrollToTop />

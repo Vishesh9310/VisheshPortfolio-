@@ -3,7 +3,7 @@ import { useData } from '../../context/DataContext'
 
 const Certificates: React.FC = () => {
   const {certificationData} = useData();
-  const topFourData = certificationData.slice(0,2);
+  const topFourData = certificationData.slice(1,3);
 
   return (
     <section  className='space-y-10 certificates-body h-fit p-24'>
@@ -16,7 +16,7 @@ const Certificates: React.FC = () => {
                 <div className='certificate-main h-full w-full rounded-2xl overflow-hidden'>
                   <img src={item.img} alt={`Certificate ${index + 1}`} className='h-80 w-full' />
                   <div className='p-5 space-y-2'>
-                    <p className='tracking-wider'>{item.desc}</p>
+                    <p className='tracking-wider'>{item.name}</p>
                     <h2 className='orbitron'>{item.date}</h2>
                   </div>
                 </div>

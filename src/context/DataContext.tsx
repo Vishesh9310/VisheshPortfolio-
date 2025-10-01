@@ -1,37 +1,59 @@
 import { createContext, type ReactNode, useContext } from "react";
-import type { Experience, Education, Project, Certificate, Blog, Service, ColleageAchievement } from "../types/dataTypes";
+import type { Experience, Education, Project, Certificate, Blog, Service, ColleageAchievement, ColleageFeedData } from "../types/dataTypes";
 import { FaUserCheck } from 'react-icons/fa';
 import { BiBarChartAlt, BiCodeAlt, BiPaint } from "react-icons/bi";
 
-import project1 from '../assets/blogs/blog-1.png'
-import project2 from '../assets/blogs/blog-2.png'
-import project3 from '../assets/blogs/blog-3.png'
-import project4 from '../assets/blogs/blog-4.png'
-import project5 from '../assets/blogs/blog-5.png'
-import project6 from '../assets/blogs/blog-6.png'
-import project7 from '../assets/blogs/blog-7.png'
-import project8 from '../assets/blogs/blog-8.png'
-import project9 from '../assets/blogs/blog-9.png'
-import project10 from '../assets/blogs/blog-10.png'
+import project1 from '../assets/projects/blog-1.png'
+import project2 from '../assets/projects/blog-2.png'
+import project3 from '../assets/projects/blog-3.png'
+import project4 from '../assets/projects/blog-4.png'
+import project5 from '../assets/projects/blog-5.png'
+import project6 from '../assets/projects/blog-6.png'
+import project7 from '../assets/projects/blog-7.png'
+import project8 from '../assets/projects/blog-8.png'
+import project9 from '../assets/projects/blog-9.png'
+import project10 from '../assets/projects/blog-10.png'
 
-import certificate1 from '../assets/certificate/Screenshot (498).png'
-import certificate2 from '../assets/certificate/Screenshot (499).png'
-import certificate3 from '../assets/certificate/Screenshot (500).png'
-import certificate4 from '../assets/certificate/Screenshot (501).png'
-import certificate5 from '../assets/certificate/Screenshot (502).png'
-import certificate6 from '../assets/certificate/Screenshot (503).png'
-import certificate7 from '../assets/certificate/Screenshot (504).png'
-import certificate8 from '../assets/certificate/Screenshot (505).png'
-import certificate9 from '../assets/certificate/Screenshot (506).png'
-import certificate10 from '../assets/certificate/Screenshot (507).png'
-import certificate11 from '../assets/certificate/Screenshot (508).png'
-import certificate12 from '../assets/certificate/Screenshot (509).png'
-import certificate13 from '../assets/certificate/Screenshot (510).png'
-import certificate14 from '../assets/certificate/Screenshot (511).png'
-import certificate15 from '../assets/certificate/Screenshot (512).png'
-import certificate16 from '../assets/certificate/Screenshot (513).png'
-import certificate17 from '../assets/certificate/postman api certificate/Postman - Postman API Fundamentals Student Expert - 2024-06-23.png'
-import certificate18 from '../assets/certificate/postman.jpg'
+import LetsUpgradeCpp from '../assets/certificate/LetsUpgrade/LetsUpgradeC++.png'
+import LetsUpgradeSQL from '../assets/certificate/LetsUpgrade/LetsUpgradeSQL.png'
+import LetsUpgradePython from '../assets/certificate/LetsUpgrade/LetsUpgradePython.png'
+import GreatLearningCSS from '../assets/certificate/GreatLearning/GreatLearningCSS.png'
+import GreatLearningDS from '../assets/certificate/GreatLearning/GreatLearningDS.png'
+import GreatLearningGraphics from '../assets/certificate/GreatLearning/GreatLearningGraphics.png'
+import InfosysPython from '../assets/certificate/Infosys/InfosysPython.png'
+import PostmanAPIProject from '../assets/certificate/Postman/PostmanAPIProject.png'
+import PostmanApiStudent from '../assets/certificate/Postman/PostmanApiStudent.jpg'
+import PostmanBadge from '../assets/certificate/Postman/PostmanBadge.png'
+import CodingNinjaTricolor from '../assets/certificate/CodingNinja/CodingninjasTricolor.png'
+import ForageGoldmanSachs from '../assets/certificate/Forage/GoldmanSachs.png'
+import ForageJPMorganChaseCo from '../assets/certificate/Forage/JpmorganChase&Co.png'
+import SimplilearnFrontend from '../assets/certificate/Simplilearn/SimplilearnFrontend.png'
+import SimplilearnFullstack from '../assets/certificate/Simplilearn/IntroFullStack.png'
+import PythonWorkshop from '../assets/certificate/workshop/Python.png'
+import YBIFoundationAiInternship from '../assets/certificate/YBIFoundation/YBIInternship2week.png'
+import YBIFoundationPythonInternship from '../assets/certificate/YBIFoundation/YBIPythonInternship1M.png'
+import ElevateLabsInternship from '../assets/certificate/ElevateLabs/JavaInternshipElevateLabs.png'
+import ElevateLabsOfferLetter from '../assets/certificate/ElevateLabs/JavaOfferLetterElevateLabs.png'
+import HackerrankJava from '../assets/certificate/Hackerrank/HackerrankJava.png'
+import HackerrankReact from '../assets/certificate/Hackerrank/HackerrankReact.png'
+import IBMtechXchange from '../assets/certificate/IBM/IBMTechXchange.png'
+
+import crshirt from '../assets/achievement/cr/ClassRepresentative.jpeg';
+import hackathonimg1 from '../assets/achievement/hackathon/IMG20250916184234.jpg';
+import techniaimg1 from '../assets/achievement/Technia2k25/IMG-20250916-WA0032.jpg';
+import techniaimg3 from '../assets/achievement/Technia2k25/IMG20250417164324.jpg';
+import techniaimg4 from '../assets/achievement/Technia2k25/IMG20250420082944.jpg';
+import techniaimg5 from '../assets/achievement/Technia2k25/IMG20250813130501.jpg';
+import techniaimg6 from '../assets/achievement/Technia2k25/techovation.jpg';
+import techniaimg7 from '../assets/achievement/Technia2k25/techovationtrophy.jpg';
+import tradefairimg1 from '../assets/achievement/tradefair/IMG20250927140521.jpg';
+import tradefairimg2 from '../assets/achievement/tradefair/IMG20250927144001.jpg';
+import tradefairimg3 from '../assets/achievement/tradefair/PDFGallery_20250927_184657_46.png';
+import tradefairimg4 from '../assets/achievement/tradefair/Screenshot_2025-09-27-12-53-56-34_439a3fec0400f8974d35eed09a31f914.jpg';
+import tv9img1 from '../assets/achievement/tv9/IMG20250328151127.jpg';
+import tv9img2 from '../assets/achievement/tv9/IMG20250328165157.jpg';
+import tv9img3 from '../assets/achievement/tv9/IMG20250328193511.jpg';
+import volunteerimg1 from '../assets/achievement/volunteer/volunteer.jpeg';
 
 import blog1 from '../assets/blogs/blog-1.png'
 import blog2 from '../assets/blogs/blog-2.png'
@@ -209,39 +231,60 @@ const projectData: Project[] = [
 
 //Certificate Section
 const certificationData: Certificate[] = [
-  { id:1, name: "hello", img: certificate1, desc: "hello vishesh", date: "20/12/2025" },
-  { id:2, name: "hello", img: certificate2, desc: "hello vishesh", date: "20/12/2025" },
-  { id:3, name: "hello", img: certificate3, desc: "hello vishesh", date: "20/12/2025" },
-  { id:4, name: "hello", img: certificate4, desc: "hello vishesh", date: "20/12/2025" },
-  { id:5, name: "hello", img: certificate5, desc: "hello vishesh", date: "20/12/2025" },
-  { id:6, name: "hello", img: certificate6, desc: "hello vishesh", date: "20/12/2025" },
-  { id:7, name: "hello", img: certificate7, desc: "hello vishesh", date: "20/12/2025" },
-  { id:8, name: "hello", img: certificate8, desc: "hello vishesh", date: "20/12/2025" },
-  { id:9, name: "hello", img: certificate9, desc: "hello vishesh", date: "20/12/2025" },
-  { id:10, name: "hello", img: certificate10, desc: "hello vishesh", date: "20/12/2025" },
-  { id:11, name: "hello", img: certificate11, desc: "hello vishesh", date: "20/12/2025" },
-  { id:12, name: "hello", img: certificate12, desc: "hello vishesh", date: "20/12/2025" },
-  { id:13, name: "hello", img: certificate13, desc: "hello vishesh", date: "20/12/2025" },
-  { id:14, name: "hello", img: certificate14, desc: "hello vishesh", date: "20/12/2025" },
-  { id:15, name: "hello", img: certificate15, desc: "hello vishesh", date: "20/12/2025" },
-  { id:16, name: "hello", img: certificate16, desc: "hello vishesh", date: "20/12/2025" },
-  { id:17, name: "hello", img: certificate17, desc: "hello vishesh", date: "20/12/2025" },
-  { id:18, name: "hello", img: certificate18, desc: "hello vishesh", date: "20/12/2025" },
-];
+  { id:1, name: "C++ BootCamp (Let's Upgrade)", img: LetsUpgradeCpp, desc: "", date: "18/06/2024 - 20/06/2024" },
+  { id:2, name: "SQL BootCamp (Let's Upgrade)", img: LetsUpgradeSQL, desc: "", date: "11/06/2024 - 15/06/2024" },
+  { id:3, name: "Python Workshop (Let's Upgrade)", img: LetsUpgradePython, desc: "Workshop on Data Visualization with Python of 3 Hours", date: "20/12/2025" },
+  { id:4, name: "CSS Tutorial Certificate Of Completion (GreatLearning)", img: GreatLearningCSS, desc: "", date: "July-2024" },
+  { id:5, name: "Data Structure in C Certificate Of Completion (GreatLearning)", img: GreatLearningDS, desc: "", date: "July-2024" },
+  { id:6, name: "Visual Graphics in C Certificate Of Completion (GreatLearning)", img: GreatLearningGraphics, desc: "", date: "July-2024" },
+  { id:7, name: "Python (Infosys)", img: InfosysPython, desc: "Course Completion Certificate of Basics Of Python", date: "17/07/2024" },
+  { id:8, name: "AI Text Summarizer App Completion Certificate (Postman)", img: PostmanAPIProject, desc: "Successfully Completion Project 'AI Text Summarizer App' with Postman Student Programs", date: "25/06/2024" },
+  { id:9, name: "API Fundamentals Student Expert (Postman)", img: PostmanApiStudent, desc: "", date: "23/06/2024" },
+  { id:10, name: "Badge Of API Fundaments Student Expert Program", img: PostmanBadge, desc: "", date: "23/06/2024" },
+  { id:11, name: "Certificate Of Achievement Tricolor CodeFest  (Coding Ninjas)", img: CodingNinjaTricolor, desc: "Certificate of Achievement 'Tricolor Code Fest' ", date: "4-Jan-2024 to 26-Jan-2024" },
+  { id:12, name: "Software Engineering Job Simulation in Goldman Sachs (Forage)", img: ForageGoldmanSachs, desc: "", date: "27-June-2024" },
+  { id:13, name: "Software Engineering Job Simulation in JPMorgan Chase & Co.", img: ForageJPMorganChaseCo, desc: "", date: "20-June-2024" },
+  { id:14, name: "Front End Development: Introduction (Simplilearn)", img: SimplilearnFrontend, desc: "Certificate Of Completion Introducation to Frontend development, In this Program I learned All About Frontend like 'What is Frontend', 'How it is Works' etc.", date: "29-July-2024" },
+  { id:15, name: "FullStack Development: Introduction (Simplilearn)", img: SimplilearnFullstack, desc: "", date: "26-July-2024" },
+  { id:16, name: "Python Workshop (Lubix India Softtech Pvt Ltd)", img: PythonWorkshop, desc: "Certification Of Successfully Participated in Comprehensive Python Workshop Conducted By Lubix India Softech Pvt Ltd.", date: "29-Oct-23" },
+  { id:17, name: "Ai and Data Skills Internship Cum Certificate (Ybi Foundation)", img: YBIFoundationAiInternship, desc: "Certification of Successfully Completed, Ai and Data Skills Internship Cum Certificate Program Duration: 2 weeks, Which is conducted by Ybi Foundation.", date: "23-June-2-24 '2 Weeks'" },
+  { id:18, name: "Python Programming Internship (Ybi Foundation)", img: YBIFoundationPythonInternship, desc: "Certification in Python Programming Internship duration of 1 Month", date: "14-July-2024" },
+  { id:19, name: "Java Developer Internship's Offer Letter (Elevate Labs)", img: ElevateLabsOfferLetter, desc: "", date: "23-June-2025" },
+  { id:20, name: "Java Developer Internship Completion Certificate (Elevate Labs)", img: ElevateLabsInternship, desc: "", date: "23/06/2025 - 28-July-2025" },
+  { id:21, name: "Certificate of Accomplishment in Java (Hackerrank)", img: HackerrankJava, desc: "", date: "30-June-2025" },
+  { id:22, name: "Certificate of ACcomplishment in React (Hackerrank)", img: HackerrankReact, desc: "", date: "5-July-2025" },
+  { id:23, name: "Certificate of Participation In IBM TechXchange Dev Day: AI & Automation Unpacked", img: IBMtechXchange, desc: "", date: "9-July-2025" },
+  ];
 
 //ColleageAchievement Section
 const colleageAchievementData: ColleageAchievement[] = [
-  { id:1, name: "hello", img: certificate1, desc: "hello vishesh", date: "20/12/2025" },
-  { id:2, name: "hello", img: certificate2, desc: "hello vishesh", date: "20/12/2025" },
-  { id:3, name: "hello", img: certificate3, desc: "hello vishesh", date: "20/12/2025" },
-  { id:4, name: "hello", img: certificate4, desc: "hello vishesh", date: "20/12/2025" },
-  { id:5, name: "hello", img: certificate5, desc: "hello vishesh", date: "20/12/2025" },
-  { id:6, name: "hello", img: certificate6, desc: "hello vishesh", date: "20/12/2025" },
-  { id:7, name: "hello", img: certificate7, desc: "hello vishesh", date: "20/12/2025" },
-  { id:8, name: "hello", img: certificate8, desc: "hello vishesh", date: "20/12/2025" },
-  { id:9, name: "hello", img: certificate9, desc: "hello vishesh", date: "20/12/2025" },
-  { id:10, name: "vishesh", img: certificate10, desc: "hello ", date: "20/12/2025" },
+  { id: 1, name: "Class Representative", img: crshirt, desc: "", date: "" },
+  { id: 2, name: "Hackathon", img: hackathonimg1, desc: "", date: "" },
+  { id: 3, name: "Technia", img: techniaimg3, desc: "", date: "" },
+  { id: 4, name: "Technia", img: techniaimg4, desc: "", date: "" },
+  { id: 5, name: "Technia", img: techniaimg6, desc: "", date: "" },
+  { id: 6, name: "Technia", img: techniaimg7, desc: "", date: "" },
+  { id: 7, name: "Tradefair", img: tradefairimg4, desc: "", date: "" },
+  { id: 8, name: "TV9", img: tv9img1, desc: "", date: "" },
+  { id: 9, name: "Volunteer", img: volunteerimg1, desc: "", date: "" },
 ]
+
+//FeedData Section
+const feedData: ColleageFeedData[] = [
+  { id: 1, name: "Class Representative", type:"image" ,media: crshirt, desc: "", date: "" },
+  { id: 2, name: "Technia", type:"image" ,media: techniaimg1, desc: "", date: "" },
+  { id: 3, name: "Technia", type:"image" ,media: techniaimg3, desc: "", date: "" },
+  { id: 4, name: "Technia", type:"image" ,media: techniaimg5, desc: "", date: "" },
+  { id: 5, name: "Technia", type:"image" ,media: techniaimg6, desc: "", date: "" },
+  { id: 6, name: "Tradefair", type:"image" ,media: tradefairimg1, desc: "", date: "" },
+  { id: 7, name: "Tradefair", type:"image" ,media: tradefairimg2, desc: "", date: "" },
+  { id: 8, name: "Tradefair", type:"image" ,media: tradefairimg3, desc: "", date: "" },
+  { id: 9, name: "Tradefair", type:"image" ,media: tradefairimg4, desc: "", date: "" },
+  { id: 10, name: "TV9", type:"image" ,media: tv9img1, desc: "", date: "" },
+  { id: 11, name: "TV9", type:"image" ,media: tv9img2, desc: "", date: "" },
+  { id: 12, name: "TV9", type:"image" ,media: tv9img3, desc: "", date: "" },
+]
+
 //Blog Section
 const blogs: Blog[] = [
   {
@@ -393,6 +436,7 @@ interface DataContextType {
   projectData: Project[];
   certificationData: Certificate[];
   colleageAchievementData: ColleageAchievement[];
+  feedData: ColleageFeedData[];
   blogs: Blog[];
   serviceData: Service[];
 }
@@ -401,7 +445,7 @@ const DataContext = createContext<DataContextType | undefined>(undefined);
 
 export const DataProvider = ({ children }: { children: ReactNode }) => {
   return (
-    <DataContext.Provider value={{ experience, education, projectData, certificationData, colleageAchievementData, blogs, serviceData }}>
+    <DataContext.Provider value={{ experience, education, projectData, certificationData, colleageAchievementData, feedData, blogs, serviceData }}>
       {children}
     </DataContext.Provider>
   );

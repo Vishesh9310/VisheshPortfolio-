@@ -39,6 +39,16 @@ export interface ColleageAchievement{
   date: string;
 }
 
+export interface ColleageFeedData {
+  id: number;
+  name: string;
+  media: string; 
+  type: "image" | "video"; 
+  desc: string;
+  date: string;
+}
+
+
 export interface Blog {
   id: number;
   img: string;
