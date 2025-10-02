@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import FeedSlider from '../components/FeedSlider';
 
 const Certificate: React.FC = () => {
-  const { certificationData, colleageAchievementData, feedData } = useData();
+  const { certificationData, colleageAchievementData } = useData();
 
   return (
     <section>
