@@ -12,9 +12,16 @@ export interface Education {
   details: string;
 }
 
+export interface ImageItem {
+  id: number;
+  src: string;
+  alt?: string;
+};
+
 export interface Project {
   id: number;
-  img: string;
+  img: ImageItem;
+  imageList: ImageItem[];
   heading: string;
   desc: string;
   about: string | string[];

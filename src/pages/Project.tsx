@@ -38,7 +38,7 @@ const Project: React.FC = () => {
             >
               <div className="project-body h-full w-full rounded-2xl overflow-hidden flex flex-col">
                 <NavLink key={project.id} to={`/projects/${project.id}`} >
-                  <img src={project.img} alt={project.heading} className="h-64 w-full object-cover" />
+                  <img src={project.img.src} alt={project.img.alt} className="h-64 w-full object-cover" />
                   <div className="p-4 flex-1 space-y-2">
                     <h3 className="text-center font-bold italic text-lg orbitron">{project.heading}</h3>
                     <p className="text-sm text-blue-500">{project.desc}</p>

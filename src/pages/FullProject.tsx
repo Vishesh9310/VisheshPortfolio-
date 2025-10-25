@@ -22,12 +22,24 @@ const FullProject: React.FC = () => {
             <div className="text-right italic">{project.date}</div>
 
             {/* Image */}
-            <div className="overflow-hidden rounded-xl shadow-lg">
+            <div className="overflow-hidden rounded-xl shadow-lg space-y-10">
                 <img
-                    src={project.img}
-                    alt={project.heading}
+                    src={project.img.src}
+                    alt={project.img.alt || "Project Image"}
                     className="w-full h-auto object-cover transform transition-transform duration-500 hover:scale-105"
                 />
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
+                    {Array.isArray(project.imageList) &&
+                        project.imageList.map((image, index) => (
+                            <img
+                                key={index}
+                                src={image.src}
+                                alt={image.alt || "Project image"}
+                                className="w-full h-48 object-cover rounded-xl max-w-[250px]"
+                            />
+                        ))}
+                </div>
+
             </div>
 
             {/* Heading & Description */}

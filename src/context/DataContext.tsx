@@ -3,15 +3,30 @@ import type { Experience, Education, Project, Certificate, Blog, Service, Collea
 import { FaUserCheck } from 'react-icons/fa';
 import { BiBarChartAlt, BiCodeAlt, BiPaint } from "react-icons/bi";
 
+//cooslibraryproject
+import cooslibImg1 from '../assets/projects/cooslibrary/homepage.png';
+import cooslibImg2 from '../assets/projects/cooslibrary/aboutpage.png';
+import cooslibImg3 from '../assets/projects/cooslibrary/helppage.png';
+import cooslibImg4 from '../assets/projects/cooslibrary/loginpage.png';
+import cooslibImg5 from '../assets/projects/cooslibrary/signuppage.png';
+//keepNoteproject
+import keepnoteImg1 from '../assets/projects/keepnotes/Homepage.png';
+import keepnoteImg2 from '../assets/projects/keepnotes/Pastespage.png';
+import keepnoteImg3 from '../assets/projects/keepnotes/viewpage.png';
+//skillsyncpro
+import skillsyncproImg1 from '../assets/projects/skillsyncpro/homepage.png';
+import skillsyncproImg2 from '../assets/projects/skillsyncpro/aboutpage.png';
+import skillsyncproImg3 from '../assets/projects/skillsyncpro/loginpage.png';
+import skillsyncproImg4 from '../assets/projects/skillsyncpro/DashboardHome.png';
+import skillsyncproImg5 from '../assets/projects/skillsyncpro/DashboardSkillcomponent.png';
+import skillsyncproImg6 from '../assets/projects/skillsyncpro/DashboardProjectcomponent.png';
+
 import project1 from '../assets/projects/blog-1.png'
 import project2 from '../assets/projects/blog-2.png'
-import project4 from '../assets/projects/blog-4.png'
 import project3 from '../assets/projects/blog-3.png'
+import project4 from '../assets/projects/blog-4.png'
 import project5 from '../assets/projects/blog-5.png'
-import project7 from '../assets/projects/blog-7.png'
-import project8 from '../assets/projects/8.png'
 import project10 from '../assets/projects/blog-6.png'
-import project11 from '../assets/projects/11.png'
 
 import LetsUpgradeCpp from '../assets/certificate/LetsUpgrade/LetsUpgradeC++.png'
 import LetsUpgradeSQL from '../assets/certificate/LetsUpgrade/LetsUpgradeSQL.png'
@@ -118,8 +133,14 @@ const education: Education[] = [
 //Project Section
 const projectData: Project[] = [
   {
-    id: 11,
-    img: project11,
+    id: 9,
+    img: { id: 101, src: cooslibImg1, alt: "Main Image" },
+    imageList: [
+      { id: 1, src: cooslibImg2, alt: "Home Page" },
+      { id: 2, src: cooslibImg3, alt: "Help Page" },
+      { id: 3, src: cooslibImg4, alt: "Login Page" },
+      { id: 4, src: cooslibImg5, alt: "SignUp Page" },
+    ],
     heading: 'Coos-Library',
     desc: "A full-stack library management web app featuring authentication, notes, book management, and a modern responsive UI",
     about: [
@@ -134,8 +155,10 @@ const projectData: Project[] = [
     previewbtn: 'https://coos-library-frontend-mu2z.vercel.app/',
   },
   {
-    id: 10,
-    img: project1,
+    id: 8,
+    img: { id: 101, src: project1, alt: "Main Image" },
+    imageList: [
+    ],
     heading: 'NotesApp with ejs',
     desc: "This NotesApp project implements a note-taking system with a clean, dynamic UI rendered using EJS, backed by Express routes and MongoDB for persistence. Users can create, read, update, and delete notes through intuitive pages. The application’s structure includes configuration files, Mongoose models to define the Note schema, routing logic in Express, and public/static assets for styling and images. It’s intended as a learning tool for server-side rendering, database integration, and full-stack JavaScript development.",
     about: 'NotesApp is a server-rendered web application built with Node.js, Express.js, EJS templates, and MongoDB (via Mongoose) that lets users manage their notes. It demonstrates full-stack fundamentals in a simpler CRUD context, highlighting how to build templated web pages, connect to a database, and handle routing and server logic.',
@@ -144,8 +167,10 @@ const projectData: Project[] = [
     previewbtn: 'https://github.com/Vishesh9310/NotesApp-ejs-node-express-mongoose-',
   },
   {
-    id: 9,
-    img: project2,
+    id: 7,
+    img: { id: 101, src: project2, alt: "Main Image" },
+    imageList: [
+    ],
     heading: 'Emart',
     desc: 'This project implements a full-stack e-commerce web application with a focus on authentication, product management, and secure access control. Using Express.js for backend logic and MongoDB with Mongoose for data storage, it manages user accounts and product inventory seamlessly. Features include signup, login, and logout for users, while the admin has exclusive privileges to add, edit, and delete products. Session handling is managed via express-session, with flash messages for feedback and cookie parsing for secure state management. The frontend is rendered with EJS templates, styled with custom assets, and structured for reusability. This project lays the foundation for building advanced e-commerce platforms with features like carts, payments, and order management.',
     about: 'The E-Mart App is a simple yet functional e-commerce platform built with Node.js, Express.js, MongoDB, and EJS templates. It supports user authentication and role-based access control, where only the admin (owner) can create, update, and delete products, while regular users are restricted to viewing items. Designed with learning and scalability in mind, the project demonstrates core concepts of backend development, authentication, session handling, and database integration in a real-world scenario.',
@@ -154,8 +179,15 @@ const projectData: Project[] = [
     previewbtn: 'https://github.com/Vishesh9310/Emart',
   },
   {
-    id: 8,
-    img: project8,
+    id: 6,
+    img: { id: 101, src: skillsyncproImg1, alt: "Main Image" },
+    imageList: [
+      { id: 2, src: skillsyncproImg2, alt: "About Page" },
+      { id: 2, src: skillsyncproImg3, alt: "Login Page" },
+      { id: 2, src: skillsyncproImg4, alt: "DashBoard Home" },
+      { id: 2, src: skillsyncproImg5, alt: "DashBoard Skill Component" },
+      { id: 2, src: skillsyncproImg6, alt: "DashBoard Project Component" },
+    ],
     heading: 'Skill-Sync-Pro',
     desc: 'Skill Management & Career Growth Tracker',
     about: [
@@ -167,8 +199,10 @@ const projectData: Project[] = [
     previewbtn: 'https://github.com/Vishesh9310/Skill-Sync-Pro',
   },
   {
-    id: 7,
-    img: project4,
+    id: 5,
+    img: { id: 101, src: project4, alt: "Main Image" },
+    imageList: [
+    ],
     heading: "RESTful BookStore Api Backend",
     desc: "The RESTful Bookstore API is a backend application developed using Java and Spring Boot that manages books and authors in a structured and scalable way. It demonstrates how to build professional-grade REST APIs with features like CRUD operations, filtering, pagination, sorting, and API documentation. Designed as a learning and showcase project, it highlights best practices in modern backend development with Spring Boot.",
     about: [
@@ -179,8 +213,10 @@ const projectData: Project[] = [
     previewbtn: "https://github.com/Vishesh9310/RESTful-Bookstore-API-Java",
   },
   {
-    id: 6,
-    img: project5,
+    id: 4,
+    img: { id: 101, src: project5, alt: "Main Image" },
+    imageList: [
+    ],
     heading: 'Library Management System',
     desc: 'This project is built using core Java and OOP concepts like classes, objects, and methods. It includes a Book class to manage book properties, a User class for handling library members, and a central Library class that implements the main logic for adding books, registering users, issuing, and returning books. The system runs in the terminal with a menu-driven interface, allowing users to interact easily through options. By focusing on real-world scenarios, this project not only reinforces programming fundamentals but also builds problem-solving and system design skills using Java.',
     about: 'The Library Management System is a simple command-line based project developed in Java to demonstrate the practical use of Object-Oriented Programming (OOP). It allows management of books and users within a library, covering real-world operations such as issuing, returning, and tracking the availability of books. This project serves as a hands-on way to strengthen OOP fundamentals while simulating how library systems work in real life.',
@@ -189,8 +225,12 @@ const projectData: Project[] = [
     previewbtn: 'https://github.com/Vishesh9310/Library-Management-System-Using-OOP-'
   },
   {
-    id: 4,
-    img: project7,
+    id: 3,
+    img: { id: 101, src: keepnoteImg1, alt: "Main Image" },
+    imageList: [
+      { id: 1, src: keepnoteImg2, alt: "All Paste Page" },
+      { id: 2, src: keepnoteImg3, alt: "View Paste Page" },
+    ],
     heading: 'KeepNotes',
     desc: "hello",
     about: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, mollitia.',
@@ -199,8 +239,10 @@ const projectData: Project[] = [
     previewbtn: 'https://github.com/Vishesh9310/KeepNotes',
   },
   {
-    id: 3,
-    img: project3,
+    id: 2,
+    img: { id: 101, src: project3, alt: "Main Image" },
+    imageList: [
+    ],
     heading: 'Sarthi',
     desc: 'Hospital Frontend Project',
     about: 'A full-fledged hospital management frontend built using React, offering appointment scheduling, doctor management, and patient records UI.',
@@ -210,7 +252,9 @@ const projectData: Project[] = [
   },
   {
     id: 1,
-    img: project10,
+    img: { id: 101, src: project10, alt: "Main Image" },
+    imageList: [
+    ],
     heading: 'Calculator',
     desc: "This project demonstrates the implementation of a fully functional calculator using vanilla JavaScript for logic, HTML5 for structure, and CSS3 for styling. The calculator supports decimal inputs, includes useful operations such as AC (All Clear) and DEL (Delete), and is enhanced with hover effects for a smooth user experience. It is styled using CSS Grid and Flexbox, ensuring responsiveness and neat alignment. Beyond being a working calculator, this project highlights key frontend skills such as DOM manipulation, event handling, and UI interaction design. It serves as a foundational project for practicing real-world UI development without external libraries.",
     about: 'The Basic Calculator Web App is a simple yet effective tool built using HTML, CSS, and JavaScript. It is designed to perform essential arithmetic operations like addition, subtraction, multiplication, division, and percentage calculations. With a clean interface and responsive layout, the calculator provides an easy-to-use experience across devices, making it both practical and beginner-friendly.',
