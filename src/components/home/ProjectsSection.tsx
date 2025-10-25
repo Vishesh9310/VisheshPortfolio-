@@ -35,8 +35,8 @@ const ProjectsSection: React.FC = () => {
             >
               <div className="project-body h-full w-full rounded-2xl overflow-hidden flex flex-col">
                 <img
-                  src={project.img}
-                  alt={project.heading}
+                  src={project.img.src}
+                  alt={project.img.alt}
                   className="h-52 w-full object-cover"
                 />
                 <div className="p-4 flex-1 space-y-2">
