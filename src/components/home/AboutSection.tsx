@@ -103,28 +103,20 @@ const AboutSection: React.FC = () => {
           {/* Responsive Container */}
           <div className="flex flex-col lg:flex-row justify-between gap-10">
             <p className="text-base sm:text-lg leading-relaxed lg:w-2/3">
-              Hi, I'm a frontend developer currently pursuing a Bachelor of Computer
-              Applications (BCA), driven by a passion for creating intuitive,
-              responsive, and user-centric digital experiences. <br />
+              Hi, I'm an aspiring **Full-Stack Developer** and current BCA student, focused on
+              crafting **responsive and user-friendly** web applications from the ground up.
+              I thrive on solving problems and bringing complete digital products to life. <br />
               <br />
-              My journey into tech began with a deep interest in programming, where I
-              built a strong foundation in C, C++, and Data Structures & Algorithms.
-              Over time, I discovered my love for frontend development and honed my
-              skills in HTML, CSS, Tailwind CSS, JavaScript, and React.js, enabling me
-              to bring ideas to life through clean, efficient, and scalable code.{" "}
+              I have a solid foundation in **Data Structures, Algorithms, C, and C++**,
+              which informs my approach to efficient coding. On the stack, I specialize in the
+              **React.js** ecosystem for the frontend, styled with utility-first **Tailwind CSS**.
+              My backend expertise includes server-side logic (e.g., **Node.js**) and
+              effective data management using **MySQL and Relational Databases**. <br />
               <br />
+              My goal is to deliver clean, scalable, and performance-optimized code on both the
+              client and server sides, ensuring a seamless experience for every user. <br />
               <br />
-              I take pride in writing well-structured code and designing interfaces
-              that are not only visually appealing but also accessible and
-              performance-optimized. I'm also well-versed in MySQL and Relational
-              Databases, giving me the ability to manage data effectively and
-              integrate backend systems seamlessly. <br />
-              <br />
-              Beyond the screen, I enjoy solving algorithmic challenges and exploring
-              modern design trends, always striving to learn, grow, and push the
-              boundaries of what I can create. <br />
-              <br />
-              Let’s build something great together!
+              Let’s discuss how my full-stack skills can benefit your next project!
             </p>
 
             {/* Right Code Block */}

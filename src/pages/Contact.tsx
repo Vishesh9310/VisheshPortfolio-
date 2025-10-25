@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section className="certificates-body px-5 py-[10%] sm:px-10 md:px-20 lg:px-24">
+    <section className="certificates-body  px-5 py-20 pb-20 sm:px-10 md:px-20 lg:px-24">
       <h1 className="text-3xl sm:text-4xl text-center font-bold mb-10 orbitron">
         Say Hello
       </h1>

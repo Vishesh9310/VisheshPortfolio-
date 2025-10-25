@@ -5,14 +5,13 @@ import { BiBarChartAlt, BiCodeAlt, BiPaint } from "react-icons/bi";
 
 import project1 from '../assets/projects/blog-1.png'
 import project2 from '../assets/projects/blog-2.png'
-import project3 from '../assets/projects/blog-3.png'
 import project4 from '../assets/projects/blog-4.png'
+import project3 from '../assets/projects/blog-3.png'
 import project5 from '../assets/projects/blog-5.png'
-import project6 from '../assets/projects/blog-6.png'
 import project7 from '../assets/projects/blog-7.png'
-import project8 from '../assets/projects/blog-8.png'
-import project9 from '../assets/projects/blog-9.png'
-import project10 from '../assets/projects/blog-10.png'
+import project8 from '../assets/projects/8.png'
+import project10 from '../assets/projects/blog-6.png'
+import project11 from '../assets/projects/11.png'
 
 import LetsUpgradeCpp from '../assets/certificate/LetsUpgrade/LetsUpgradeC++.png'
 import LetsUpgradeSQL from '../assets/certificate/LetsUpgrade/LetsUpgradeSQL.png'
@@ -56,15 +55,6 @@ import tv9img3 from '../assets/achievement/tv9/IMG20250328193511.jpg';
 import volunteerimg1 from '../assets/achievement/volunteer/volunteer.jpeg';
 
 import blog1 from '../assets/blogs/blog-1.png'
-import blog2 from '../assets/blogs/blog-2.png'
-import blog3 from '../assets/blogs/blog-3.png'
-import blog4 from '../assets/blogs/blog-4.png'
-import blog5 from '../assets/blogs/blog-5.png'
-import blog6 from '../assets/blogs/blog-6.png'
-import blog7 from '../assets/blogs/blog-7.png'
-import blog8 from '../assets/blogs/blog-8.png'
-import blog9 from '../assets/blogs/blog-9.png'
-import blog10 from '../assets/blogs/blog-10.png'
 
 //Static data
 //Experience Section
@@ -128,7 +118,23 @@ const education: Education[] = [
 //Project Section
 const projectData: Project[] = [
   {
-    id: 1,
+    id: 11,
+    img: project11,
+    heading: 'Coos-Library',
+    desc: "A full-stack library management web app featuring authentication, notes, book management, and a modern responsive UI",
+    about: [
+      "Discover, Read, Imagine.",
+      "COOS-LIBRARY is a modern, full-featured digital library platform built to redefine how readers explore and enjoy books online. Designed with a mission to make reading more accessible, interactive, and engaging, this platform offers an immersive literary experience with powerful discovery tools, progress tracking, and community-driven features.",
+      "The platform allows users to read anywhere, track their progress, highlight favorite sections, and connect with a vibrant community through reviews and recommendations. It integrates gamified reading management with daily and weekly progress metrics and a unique ranking system (e.g., “Current Rank: Platinum”) that encourages consistent reading habits.",
+      "From a technical standpoint, COOS-LIBRARY demonstrates expertise in Full Stack Development, featuring a responsive React frontend, a robust Node.js + Express backend, and MongoDB Atlas for database management. The app is styled using Tailwind CSS and deployed seamlessly on Vercel (frontend) and Render (backend).",
+      "This project showcases not just technical proficiency, but also a deep focus on user experience (UX), data visualization, and reader engagement, delivering a smooth, scalable, and delightful journey for book lovers worldwide."
+    ],
+    date: '2025-10-25',
+    codebtn: 'https://github.com/Vishesh9310/CoosLibraryFrontend',
+    previewbtn: 'https://coos-library-frontend-mu2z.vercel.app/',
+  },
+  {
+    id: 10,
     img: project1,
     heading: 'NotesApp with ejs',
     desc: "This NotesApp project implements a note-taking system with a clean, dynamic UI rendered using EJS, backed by Express routes and MongoDB for persistence. Users can create, read, update, and delete notes through intuitive pages. The application’s structure includes configuration files, Mongoose models to define the Note schema, routing logic in Express, and public/static assets for styling and images. It’s intended as a learning tool for server-side rendering, database integration, and full-stack JavaScript development.",
@@ -138,7 +144,7 @@ const projectData: Project[] = [
     previewbtn: 'https://github.com/Vishesh9310/NotesApp-ejs-node-express-mongoose-',
   },
   {
-    id: 2,
+    id: 9,
     img: project2,
     heading: 'Emart',
     desc: 'This project implements a full-stack e-commerce web application with a focus on authentication, product management, and secure access control. Using Express.js for backend logic and MongoDB with Mongoose for data storage, it manages user accounts and product inventory seamlessly. Features include signup, login, and logout for users, while the admin has exclusive privileges to add, edit, and delete products. Session handling is managed via express-session, with flash messages for feedback and cookie parsing for secure state management. The frontend is rendered with EJS templates, styled with custom assets, and structured for reusability. This project lays the foundation for building advanced e-commerce platforms with features like carts, payments, and order management.',
@@ -148,27 +154,32 @@ const projectData: Project[] = [
     previewbtn: 'https://github.com/Vishesh9310/Emart',
   },
   {
-    id: 3,
-    img: project3,
+    id: 8,
+    img: project8,
     heading: 'Skill-Sync-Pro',
-    desc: 'A productivity-first React app that combines Skill Tracking, Task Management, Project Portfolio, and Career Growth Monitoring in one clean, user-friendly platform.',
-    about: 'Skill Management & Career Growth Tracker',
+    desc: 'Skill Management & Career Growth Tracker',
+    about: [
+      "A React + TypeScript skill management app that allows users to add, view, update, and filter their skills. This project is designed to practice and showcase React core concepts like state management, routing, and component communication, all wrapped in a clean structure with a responsive UI using Tailwind CSS.",
+      "SkillSync Pro is a React + TypeScript-based skill management application built to streamline how users track, organize, and improve their skills. With a clean and responsive UI powered by Tailwind CSS, it provides an interactive platform where users can add, update, and filter their skills effortlessly. The project emphasizes core React concepts such as state management, component communication, routing, and global state handling using Context API with useReducer. Designed with scalability and best practices in mind, SkillSync is both a practical learning project and a showcase of modern frontend development techniques.",
+    ],
     date: '2025-08-03',
     codebtn: 'https://github.com/Vishesh9310/Skill-Sync-Pro',
     previewbtn: 'https://github.com/Vishesh9310/Skill-Sync-Pro',
   },
   {
-    id: 4,
+    id: 7,
     img: project4,
     heading: "RESTful BookStore Api Backend",
-    desc: "This project provides a fully functional RESTful API for managing bookstore data. It defines Book and Author entities, exposes endpoints via @RestController, and uses Spring Data JPA with H2 Database for persistence. Core features include adding, updating, deleting, and retrieving books and authors, along with advanced capabilities such as filtering records, paginating large datasets, and sorting results. The API is tested using Postman, and documentation is provided through Swagger UI for easy exploration and integration. By combining clean architecture with powerful Spring Boot features, this project serves as a practical guide to building real-world RESTful services in Java.",
-    about: "The RESTful Bookstore API is a backend application developed using Java and Spring Boot that manages books and authors in a structured and scalable way. It demonstrates how to build professional-grade REST APIs with features like CRUD operations, filtering, pagination, sorting, and API documentation. Designed as a learning and showcase project, it highlights best practices in modern backend development with Spring Boot.",
+    desc: "The RESTful Bookstore API is a backend application developed using Java and Spring Boot that manages books and authors in a structured and scalable way. It demonstrates how to build professional-grade REST APIs with features like CRUD operations, filtering, pagination, sorting, and API documentation. Designed as a learning and showcase project, it highlights best practices in modern backend development with Spring Boot.",
+    about: [
+      "This project provides a fully functional RESTful API for managing bookstore data. It defines Book and Author entities, exposes endpoints via @RestController, and uses Spring Data JPA with H2 Database for persistence. Core features include adding, updating, deleting, and retrieving books and authors, along with advanced capabilities such as filtering records, paginating large datasets, and sorting results. The API is tested using Postman, and documentation is provided through Swagger UI for easy exploration and integration. By combining clean architecture with powerful Spring Boot features, this project serves as a practical guide to building real-world RESTful services in Java.",
+    ],
     date: '2025-07-15',
     codebtn: "https://github.com/Vishesh9310/RESTful-Bookstore-API-Java",
     previewbtn: "https://github.com/Vishesh9310/RESTful-Bookstore-API-Java",
   },
   {
-    id: 5,
+    id: 6,
     img: project5,
     heading: 'Library Management System',
     desc: 'This project is built using core Java and OOP concepts like classes, objects, and methods. It includes a Book class to manage book properties, a User class for handling library members, and a central Library class that implements the main logic for adding books, registering users, issuing, and returning books. The system runs in the terminal with a menu-driven interface, allowing users to interact easily through options. By focusing on real-world scenarios, this project not only reinforces programming fundamentals but also builds problem-solving and system design skills using Java.',
@@ -178,17 +189,7 @@ const projectData: Project[] = [
     previewbtn: 'https://github.com/Vishesh9310/Library-Management-System-Using-OOP-'
   },
   {
-    id: 6,
-    img: project6,
-    heading: 'Skill Tracking App',
-    desc: "SkillSync allows users to manage their personal skill growth journey by adding new skills with details like name, proficiency level, priority, and planned date. It features a centralized skill list for easy viewing and updating, along with dynamic filtering based on the current day of the week. The app highlights practical React implementations, including controlled forms, conditional rendering, list rendering, and client-side routing with React Router DOM. With a well-structured project architecture and a responsive design, SkillSync demonstrates how modern frontend tools can be combined to create a professional and user-friendly application. Future plans include backend integration, a calendar for reminders, graph-based progress visualization, and theme toggling for a richer user experience.",
-    about: 'SkillSync is a React + TypeScript-based skill management application built to streamline how users track, organize, and improve their skills. With a clean and responsive UI powered by Tailwind CSS, it provides an interactive platform where users can add, update, and filter their skills effortlessly. The project emphasizes core React concepts such as state management, component communication, routing, and global state handling using Context API with useReducer. Designed with scalability and best practices in mind, SkillSync is both a practical learning project and a showcase of modern frontend development techniques. ',
-    date: '2025-06-08',
-    codebtn: 'https://github.com/Vishesh9310/Skill-Tracking-React-TypeScript',
-    previewbtn: 'https://github.com/Vishesh9310/Skill-Tracking-React-TypeScript',
-  },
-  {
-    id: 7,
+    id: 4,
     img: project7,
     heading: 'KeepNotes',
     desc: "hello",
@@ -198,8 +199,8 @@ const projectData: Project[] = [
     previewbtn: 'https://github.com/Vishesh9310/KeepNotes',
   },
   {
-    id: 8,
-    img: project8,
+    id: 3,
+    img: project3,
     heading: 'Sarthi',
     desc: 'Hospital Frontend Project',
     about: 'A full-fledged hospital management frontend built using React, offering appointment scheduling, doctor management, and patient records UI.',
@@ -208,17 +209,7 @@ const projectData: Project[] = [
     previewbtn: 'https://github.com/Vishesh9310/Sarthi2.0',
   },
   {
-    id: 9,
-    img: project9,
-    heading: 'E-Book website',
-    desc: "This project focuses on building the UI and navigation flow of an educational web app using reusable React components and client-side routing with React Router DOM. The interface includes a home page, e-book/notes listings, and roadmap sections, all styled with Tailwind CSS to ensure responsiveness across devices. While it currently functions as a frontend-only project, it sets the foundation for future enhancements such as backend integration, search functionality, and user authentication. With its structured layout and student-centered purpose, the E-Book Web App demonstrates how modern frontend technologies can be combined to create meaningful, goal-oriented digital solutions.",
-    about: "The E-Book Web App is a frontend project designed to make learning resources more accessible for students. Built with React.js, CSS3, and Tailwind CSS, it provides a clean and user-friendly interface where learners can explore free e-books, study notes, and career roadmaps. The primary goal of this project is to support students who may struggle to find relevant study material or afford costly resources, by offering an open and responsive digital platform.",
-    date: '2024-11-24',
-    codebtn: 'https://github.com/Vishesh9310/e-book-website',
-    previewbtn: 'https://github.com/Vishesh9310/e-book-website',
-  },
-  {
-    id: 10,
+    id: 1,
     img: project10,
     heading: 'Calculator',
     desc: "This project demonstrates the implementation of a fully functional calculator using vanilla JavaScript for logic, HTML5 for structure, and CSS3 for styling. The calculator supports decimal inputs, includes useful operations such as AC (All Clear) and DEL (Delete), and is enhanced with hover effects for a smooth user experience. It is styled using CSS Grid and Flexbox, ensuring responsiveness and neat alignment. Beyond being a working calculator, this project highlights key frontend skills such as DOM manipulation, event handling, and UI interaction design. It serves as a foundational project for practicing real-world UI development without external libraries.",
@@ -231,34 +222,34 @@ const projectData: Project[] = [
 
 //Certificate Section
 const certificationData: Certificate[] = [
-  { id:1, name: "C++ BootCamp (Let's Upgrade)", img: LetsUpgradeCpp, desc: "", date: "18/06/2024 - 20/06/2024" },
-  { id:2, name: "SQL BootCamp (Let's Upgrade)", img: LetsUpgradeSQL, desc: "", date: "11/06/2024 - 15/06/2024" },
-  { id:3, name: "Python Workshop (Let's Upgrade)", img: LetsUpgradePython, desc: "Workshop on Data Visualization with Python of 3 Hours", date: "20/12/2025" },
-  { id:4, name: "CSS Tutorial Certificate Of Completion (GreatLearning)", img: GreatLearningCSS, desc: "", date: "July-2024" },
-  { id:5, name: "Data Structure in C Certificate Of Completion (GreatLearning)", img: GreatLearningDS, desc: "", date: "July-2024" },
-  { id:6, name: "Visual Graphics in C Certificate Of Completion (GreatLearning)", img: GreatLearningGraphics, desc: "", date: "July-2024" },
-  { id:7, name: "Python (Infosys)", img: InfosysPython, desc: "Course Completion Certificate of Basics Of Python", date: "17/07/2024" },
-  { id:8, name: "AI Text Summarizer App Completion Certificate (Postman)", img: PostmanAPIProject, desc: "Successfully Completion Project 'AI Text Summarizer App' with Postman Student Programs", date: "25/06/2024" },
-  { id:9, name: "API Fundamentals Student Expert (Postman)", img: PostmanApiStudent, desc: "", date: "23/06/2024" },
-  { id:10, name: "Badge Of API Fundaments Student Expert Program", img: PostmanBadge, desc: "", date: "23/06/2024" },
-  { id:11, name: "Certificate Of Achievement Tricolor CodeFest  (Coding Ninjas)", img: CodingNinjaTricolor, desc: "Certificate of Achievement 'Tricolor Code Fest' ", date: "4-Jan-2024 to 26-Jan-2024" },
-  { id:12, name: "Software Engineering Job Simulation in Goldman Sachs (Forage)", img: ForageGoldmanSachs, desc: "", date: "27-June-2024" },
-  { id:13, name: "Software Engineering Job Simulation in JPMorgan Chase & Co.", img: ForageJPMorganChaseCo, desc: "", date: "20-June-2024" },
-  { id:14, name: "Front End Development: Introduction (Simplilearn)", img: SimplilearnFrontend, desc: "Certificate Of Completion Introducation to Frontend development, In this Program I learned All About Frontend like 'What is Frontend', 'How it is Works' etc.", date: "29-July-2024" },
-  { id:15, name: "FullStack Development: Introduction (Simplilearn)", img: SimplilearnFullstack, desc: "", date: "26-July-2024" },
-  { id:16, name: "Python Workshop (Lubix India Softtech Pvt Ltd)", img: PythonWorkshop, desc: "Certification Of Successfully Participated in Comprehensive Python Workshop Conducted By Lubix India Softech Pvt Ltd.", date: "29-Oct-23" },
-  { id:17, name: "Ai and Data Skills Internship Cum Certificate (Ybi Foundation)", img: YBIFoundationAiInternship, desc: "Certification of Successfully Completed, Ai and Data Skills Internship Cum Certificate Program Duration: 2 weeks, Which is conducted by Ybi Foundation.", date: "23-June-2-24 '2 Weeks'" },
-  { id:18, name: "Python Programming Internship (Ybi Foundation)", img: YBIFoundationPythonInternship, desc: "Certification in Python Programming Internship duration of 1 Month", date: "14-July-2024" },
-  { id:19, name: "Java Developer Internship's Offer Letter (Elevate Labs)", img: ElevateLabsOfferLetter, desc: "", date: "23-June-2025" },
-  { id:20, name: "Java Developer Internship Completion Certificate (Elevate Labs)", img: ElevateLabsInternship, desc: "", date: "23/06/2025 - 28-July-2025" },
-  { id:21, name: "Certificate of Accomplishment in Java (Hackerrank)", img: HackerrankJava, desc: "", date: "30-June-2025" },
-  { id:22, name: "Certificate of ACcomplishment in React (Hackerrank)", img: HackerrankReact, desc: "", date: "5-July-2025" },
-  { id:23, name: "Certificate of Participation In IBM TechXchange Dev Day: AI & Automation Unpacked", img: IBMtechXchange, desc: "", date: "9-July-2025" },
-  ];
+  { id: 1, name: "C++ BootCamp (Let's Upgrade)", img: LetsUpgradeCpp, desc: "", date: "18/06/2024 - 20/06/2024" },
+  { id: 2, name: "SQL BootCamp (Let's Upgrade)", img: LetsUpgradeSQL, desc: "", date: "11/06/2024 - 15/06/2024" },
+  { id: 3, name: "Python Workshop (Let's Upgrade)", img: LetsUpgradePython, desc: "Workshop on Data Visualization with Python of 3 Hours", date: "20/12/2025" },
+  { id: 4, name: "CSS Tutorial Certificate Of Completion (GreatLearning)", img: GreatLearningCSS, desc: "", date: "July-2024" },
+  { id: 5, name: "Data Structure in C Certificate Of Completion (GreatLearning)", img: GreatLearningDS, desc: "", date: "July-2024" },
+  { id: 6, name: "Visual Graphics in C Certificate Of Completion (GreatLearning)", img: GreatLearningGraphics, desc: "", date: "July-2024" },
+  { id: 7, name: "Python (Infosys)", img: InfosysPython, desc: "Course Completion Certificate of Basics Of Python", date: "17/07/2024" },
+  { id: 8, name: "AI Text Summarizer App Completion Certificate (Postman)", img: PostmanAPIProject, desc: "Successfully Completion Project 'AI Text Summarizer App' with Postman Student Programs", date: "25/06/2024" },
+  { id: 9, name: "API Fundamentals Student Expert (Postman)", img: PostmanApiStudent, desc: "", date: "23/06/2024" },
+  { id: 10, name: "Badge Of API Fundaments Student Expert Program", img: PostmanBadge, desc: "", date: "23/06/2024" },
+  { id: 11, name: "Certificate Of Achievement Tricolor CodeFest  (Coding Ninjas)", img: CodingNinjaTricolor, desc: "Certificate of Achievement 'Tricolor Code Fest' ", date: "4-Jan-2024 to 26-Jan-2024" },
+  { id: 12, name: "Software Engineering Job Simulation in Goldman Sachs (Forage)", img: ForageGoldmanSachs, desc: "", date: "27-June-2024" },
+  { id: 13, name: "Software Engineering Job Simulation in JPMorgan Chase & Co.", img: ForageJPMorganChaseCo, desc: "", date: "20-June-2024" },
+  { id: 14, name: "Front End Development: Introduction (Simplilearn)", img: SimplilearnFrontend, desc: "Certificate Of Completion Introducation to Frontend development, In this Program I learned All About Frontend like 'What is Frontend', 'How it is Works' etc.", date: "29-July-2024" },
+  { id: 15, name: "FullStack Development: Introduction (Simplilearn)", img: SimplilearnFullstack, desc: "", date: "26-July-2024" },
+  { id: 16, name: "Python Workshop (Lubix India Softtech Pvt Ltd)", img: PythonWorkshop, desc: "Certification Of Successfully Participated in Comprehensive Python Workshop Conducted By Lubix India Softech Pvt Ltd.", date: "29-Oct-23" },
+  { id: 17, name: "Ai and Data Skills Internship Cum Certificate (Ybi Foundation)", img: YBIFoundationAiInternship, desc: "Certification of Successfully Completed, Ai and Data Skills Internship Cum Certificate Program Duration: 2 weeks, Which is conducted by Ybi Foundation.", date: "23-June-2-24 '2 Weeks'" },
+  { id: 18, name: "Python Programming Internship (Ybi Foundation)", img: YBIFoundationPythonInternship, desc: "Certification in Python Programming Internship duration of 1 Month", date: "14-July-2024" },
+  { id: 19, name: "Java Developer Internship's Offer Letter (Elevate Labs)", img: ElevateLabsOfferLetter, desc: "", date: "23-June-2025" },
+  { id: 20, name: "Java Developer Internship Completion Certificate (Elevate Labs)", img: ElevateLabsInternship, desc: "", date: "23/06/2025 - 28-July-2025" },
+  { id: 21, name: "Certificate of Accomplishment in Java (Hackerrank)", img: HackerrankJava, desc: "", date: "30-June-2025" },
+  { id: 22, name: "Certificate of ACcomplishment in React (Hackerrank)", img: HackerrankReact, desc: "", date: "5-July-2025" },
+  { id: 23, name: "Certificate of Participation In IBM TechXchange Dev Day: AI & Automation Unpacked", img: IBMtechXchange, desc: "", date: "9-July-2025" },
+];
 
 //ColleageAchievement Section
 const colleageAchievementData: ColleageAchievement[] = [
-  { id: 1, name: "Class Representative", img: crshirt, desc: "", date: "" },
+  { id: 1, name: "Class Representative", img: crshirt, desc: "", date: "Dec-2024" },
   { id: 2, name: "Hackathon", img: hackathonimg1, desc: "", date: "" },
   { id: 3, name: "Technia", img: techniaimg3, desc: "", date: "" },
   { id: 4, name: "Technia", img: techniaimg4, desc: "", date: "" },
@@ -271,18 +262,18 @@ const colleageAchievementData: ColleageAchievement[] = [
 
 //FeedData Section
 const feedData: ColleageFeedData[] = [
-  { id: 1, name: "Class Representative", type:"image" ,media: crshirt, desc: "", date: "" },
-  { id: 2, name: "Technia", type:"image" ,media: techniaimg1, desc: "", date: "" },
-  { id: 3, name: "Technia", type:"image" ,media: techniaimg3, desc: "", date: "" },
-  { id: 4, name: "Technia", type:"image" ,media: techniaimg5, desc: "", date: "" },
-  { id: 5, name: "Technia", type:"image" ,media: techniaimg6, desc: "", date: "" },
-  { id: 6, name: "Tradefair", type:"image" ,media: tradefairimg1, desc: "", date: "" },
-  { id: 7, name: "Tradefair", type:"image" ,media: tradefairimg2, desc: "", date: "" },
-  { id: 8, name: "Tradefair", type:"image" ,media: tradefairimg3, desc: "", date: "" },
-  { id: 9, name: "Tradefair", type:"image" ,media: tradefairimg4, desc: "", date: "" },
-  { id: 10, name: "TV9", type:"image" ,media: tv9img1, desc: "", date: "" },
-  { id: 11, name: "TV9", type:"image" ,media: tv9img2, desc: "", date: "" },
-  { id: 12, name: "TV9", type:"image" ,media: tv9img3, desc: "", date: "" },
+  { id: 1, name: "Class Representative", type: "image", media: crshirt, desc: "", date: "" },
+  { id: 2, name: "Technia", type: "image", media: techniaimg1, desc: "", date: "" },
+  { id: 3, name: "Technia", type: "image", media: techniaimg3, desc: "", date: "" },
+  { id: 4, name: "Technia", type: "image", media: techniaimg5, desc: "", date: "" },
+  { id: 5, name: "Technia", type: "image", media: techniaimg6, desc: "", date: "" },
+  { id: 6, name: "Tradefair", type: "image", media: tradefairimg1, desc: "", date: "" },
+  { id: 7, name: "Tradefair", type: "image", media: tradefairimg2, desc: "", date: "" },
+  { id: 8, name: "Tradefair", type: "image", media: tradefairimg3, desc: "", date: "" },
+  { id: 9, name: "Tradefair", type: "image", media: tradefairimg4, desc: "", date: "" },
+  { id: 10, name: "TV9", type: "image", media: tv9img1, desc: "", date: "" },
+  { id: 11, name: "TV9", type: "image", media: tv9img2, desc: "", date: "" },
+  { id: 12, name: "TV9", type: "image", media: tv9img3, desc: "", date: "" },
 ]
 
 //Blog Section
@@ -300,105 +291,6 @@ React with TypeScript improves **developer experience** and reduces bugs.
 - Easier refactoring
     `,
     tags: ["react", "typescript"],
-  },
-  {
-    id: 2,
-    img: blog2,
-    cat: "webdev",
-    title: "Mastering TailwindCSS",
-    content: `
-# TailwindCSS for Fast UI
-TailwindCSS is a utility-first CSS framework that makes styling much faster.
-\`\`\`tsx
-<div className="bg-blue-500 text-white p-4">Hello Tailwind!</div>
-\`\`\`
-    `,
-    tags: ["css", "tailwind"],
-  },
-  {
-    id: 3,
-    img: blog3,
-    cat: "webdev",
-    title: "Understanding useEffect in React",
-    content: `
-# useEffect Hook
-The **useEffect** hook lets you synchronize components with external systems like APIs.
-    `,
-    tags: ["react", "hooks"],
-  },
-  {
-    id: 4,
-    img: blog4,
-    cat: "Database",
-    title: "Dynamically Securing Databases using Hashicorp Vault",
-    content: "Nowadays, it's hard to profoundly talk about security in the IT industry, since it has to be considered on so many different levels: from securing code chunks, securing containers, up to securing complex infrastructures and defining strong authorization and authentication policies across the enterprise.",
-    tags: ["react", "hooks", "database, "],
-  },
-  {
-    id: 5,
-    img: blog5,
-    cat: "webdev",
-    title: "Understanding useEffect in React",
-    content: `
-# useEffect Hook
-The **useEffect** hook lets you synchronize components with external systems like APIs.
-    `,
-    tags: ["react", "hooks"],
-  },
-  {
-    id: 6,
-    img: blog6,
-    cat: "webdev",
-    title: "Understanding useEffect in React",
-    content: `
-# useEffect Hook
-The **useEffect** hook lets you synchronize components with external systems like APIs.
-    `,
-    tags: ["react", "hooks"],
-  },
-  {
-    id: 7,
-    img: blog7,
-    cat: "webdev",
-    title: "Understanding useEffect in React",
-    content: `
-# useEffect Hook
-The **useEffect** hook lets you synchronize components with external systems like APIs.
-    `,
-    tags: ["react", "hooks"],
-  },
-  {
-    id: 8,
-    img: blog8,
-    cat: "webdev",
-    title: "Understanding useEffect in React",
-    content: `
-# useEffect Hook
-The **useEffect** hook lets you synchronize components with external systems like APIs.
-    `,
-    tags: ["react", "hooks"],
-  },
-  {
-    id: 9,
-    img: blog9,
-    cat: "webdev",
-    title: "Understanding useEffect in React",
-    content: `
-# useEffect Hook
-The **useEffect** hook lets you synchronize components with external systems like APIs.
-    `,
-    tags: ["react", "hooks"],
-  },
-  {
-    id: 10,
-    img: blog10,
-    cat: "webdev",
-    title: "Understanding useEffect in React",
-    content: `
-# useEffect Hook
-The **useEffect** hook lets you synchronize components with external systems like APIs.
-    `,
-    tags: ["react", "hooks"],
   },
 ];
 

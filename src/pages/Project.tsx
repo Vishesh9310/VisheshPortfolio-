@@ -15,10 +15,7 @@ interface Project {
 }
 
 const Project: React.FC = () => {
-
   const { projectData } = useData();
-
-
 
   const problemSolvingData = [
     { img: w3icon, heading: 'W3schools', link: 'https://www.w3profile.com/Vishesh' },
@@ -44,7 +41,7 @@ const Project: React.FC = () => {
                   <img src={project.img} alt={project.heading} className="h-64 w-full object-cover" />
                   <div className="p-4 flex-1 space-y-2">
                     <h3 className="text-center font-bold italic text-lg orbitron">{project.heading}</h3>
-                    <p className="text-sm text-blue-500">{project.about}</p>
+                    <p className="text-sm text-blue-500">{project.desc}</p>
                     <p className="orbitron text-sm">{project.date}</p>
                   </div>
                 </NavLink>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaJava, FaObjectGroup } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaJava, FaObjectGroup, FaPython } from "react-icons/fa";
 import { SiTypescript, SiMongodb, SiMysql, SiExpress, SiPostman, SiGit, SiTailwindcss, SiSpring, SiCplusplus, SiC, SiJavascript, SiLeetcode } from "react-icons/si";
 import { MdMemory, MdSmartphone } from 'react-icons/md'
 import { BiBrain } from 'react-icons/bi'
@@ -16,7 +16,7 @@ const SkillsSection: React.FC = () => {
       </div>
       <div className='w-full space-y-20'>
         <h2 className='orbitron mx-auto font-bold italic text-lg tracking-[0.2em] border-b-2 w-fit '>Frontend Development</h2>
-        <div className='grid p-3 grid-cols-4 gap-x-5 gap-y-10 w-full place-items-center'>
+        <div className='grid p-3 grid-cols-3 w-full gap-x-5 gap-y-10 place-items-center'>
           <div className=' text-center'>
             <FaHtml5 title="HTML" className='text-orange-600 mb-3 h-9 w-fit m-auto' />
             <h2>HTML5</h2>
@@ -46,7 +46,7 @@ const SkillsSection: React.FC = () => {
 
       <div className='w-full space-y-20'>
         <h2 className='orbitron mx-auto font-bold italic text-lg tracking-[0.2em] border-b-2 w-fit'>Backend Development</h2>
-        <div className='grid p-3 grid-cols-4 gap-x-5 gap-y-10 w-full place-items-center'>
+        <div className='grid p-3 grid-cols-3 gap-x-5 gap-y-10 w-full place-items-center'>
           <div className=' text-center'>
             <FaNodeJs title="Node.js" className='text-green-600 mb-3 h-9 w-fit m-auto' />
             <h2>NodeJs</h2>
@@ -95,7 +95,7 @@ const SkillsSection: React.FC = () => {
       
       <div className='w-full space-y-20'>
         <h2 className='orbitron mx-auto font-bold italic text-lg tracking-[0.2em] border-b-2 w-fit'>Programming Languages</h2>
-        <div className='grid p-3 grid-cols-4 w-full gap-x-5 gap-y-10 place-items-center'>
+        <div className='grid p-3 grid-cols-3 w-full gap-x-5 gap-y-10 place-items-center'>
           <div className=' text-center'>
             <SiC title="C" className='text-white mb-3 h-8 w-fit m-auto' />
             <h2>C Programming</h2>
@@ -111,6 +111,10 @@ const SkillsSection: React.FC = () => {
           <div className=' text-center'>
             <FaJava title="JavaScript" className='text-yellow-300 mb-3 h-9 w-fit m-auto' />
             <h2>Java</h2>
+          </div>
+          <div className=' text-center'>
+            <FaPython title="JavaScript" className='text-blue-500 mb-3 h-9 w-fit m-auto' />
+            <h2>Python</h2>
           </div>
         </div>
       </div>

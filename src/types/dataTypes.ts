@@ -17,7 +17,7 @@ export interface Project {
   img: string;
   heading: string;
   desc: string;
-  about: string;
+  about: string | string[];
   date: string;
   codebtn: string;
   previewbtn: string;

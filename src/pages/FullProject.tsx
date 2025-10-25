@@ -36,7 +36,14 @@ const FullProject: React.FC = () => {
                     {project.heading}
                 </h1>
                 <h3 className="text-lg sm:text-xl text-purple-500">{project.desc}</h3>
-                <p className="leading-relaxed">{project.about}</p>
+                <div className="leading-relaxed space-y-4 text-left">
+                    {Array.isArray(project.about)
+                        ? project.about.map((line, index) => (
+                            <p key={index}>{line}</p>
+                        ))
+                        : <p>{project.about}</p>}
+                </div>
+
             </div>
 
             {/* Action Buttons */}
