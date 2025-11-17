@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import logo from '../../assets/me/me half.jpg'
+import logo from '../../assets/me/mehalf.jpg'
 import { useLocation } from 'react-router-dom';
 import Vishesh_Resume from '../../assets/resume/Vishesh 2023-26.pdf'
 
