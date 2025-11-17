@@ -3,6 +3,15 @@ import type { Experience, Education, Project, Certificate, Blog, Service, Collea
 import { FaUserCheck } from 'react-icons/fa';
 import { BiBarChartAlt, BiCodeAlt, BiPaint } from "react-icons/bi";
 
+//growthboard
+import growthBoardImg1 from '../assets/projects/growthboard/main.png';
+import growthBoardImg2 from '../assets/projects/growthboard/login.png';
+import growthBoardImg3 from '../assets/projects/growthboard/dashboard.png';
+import growthBoardImg4 from '../assets/projects/growthboard/dashboard2.png';
+import growthBoardImg5 from '../assets/projects/growthboard/skills.png';
+import growthBoardImg6 from '../assets/projects/growthboard/achievement.png';
+import growthBoardImg7 from '../assets/projects/growthboard/projects.png';
+import growthBoardImg8 from '../assets/projects/growthboard/profile.png';
 //cooslibraryproject
 import cooslibImg1 from '../assets/projects/cooslibrary/homepage.png';
 import cooslibImg2 from '../assets/projects/cooslibrary/aboutpage.png';
@@ -21,12 +30,12 @@ import skillsyncproImg4 from '../assets/projects/skillsyncpro/DashboardHome.png'
 import skillsyncproImg5 from '../assets/projects/skillsyncpro/DashboardSkillcomponent.png';
 import skillsyncproImg6 from '../assets/projects/skillsyncpro/DashboardProjectcomponent.png';
 
-import project1 from '../assets/projects/blog-1.png'
-import project2 from '../assets/projects/blog-2.png'
-import project3 from '../assets/projects/blog-3.png'
-import project4 from '../assets/projects/blog-4.png'
-import project5 from '../assets/projects/blog-5.png'
-import project10 from '../assets/projects/blog-6.png'
+import calculator from '../assets/projects/calculator.png'
+import emart from '../assets/projects/emart.png'
+import librarymanagement from '../assets/projects/librarymanagement.png'
+import notesappwithejs from '../assets/projects/notesappwithejs.png'
+import restfulbackendbookstore from '../assets/projects/restfulbackendbookstore.png'
+import hospitalimg from '../assets/projects/hospitalimg.png'
 
 import LetsUpgradeCpp from '../assets/certificate/LetsUpgrade/LetsUpgradeC++.png'
 import LetsUpgradeSQL from '../assets/certificate/LetsUpgrade/LetsUpgradeSQL.png'
@@ -133,6 +142,30 @@ const education: Education[] = [
 //Project Section
 const projectData: Project[] = [
   {
+    id: 10,
+    img: { id: 101, src: growthBoardImg1, alt: "Main Image" },
+    imageList: [
+      { id: 1, src: growthBoardImg2, alt: "login Page" },
+      { id: 2, src: growthBoardImg3, alt: "DashBoard Page" },
+      { id: 3, src: growthBoardImg4, alt: "DashBoard Page" },
+      { id: 4, src: growthBoardImg5, alt: "Skills Page" },
+      { id: 1, src: growthBoardImg6, alt: "Achievments Page" },
+      { id: 2, src: growthBoardImg7, alt: "Projects Page" },
+      { id: 3, src: growthBoardImg8, alt: "Profile Page" },
+    ],
+    heading: 'Growth Board',
+    desc: "GrowthBoard is a MERN-based web application that helps users track their skills, goals, achievements, and projects in a single dashboard. It provides a structured and visual way to monitor personal and career growth.",
+    about: [
+      "GrowthBoard is designed as a centralized growth-tracking platform that enables students and professionals to organize their learning journey effectively.",
+      "By offering modules for skill management, goal setting, achievement tracking, and project monitoring, the system replaces traditional manual methods like notebooks and spreadsheets.",
+      "Built using MongoDB, Express.js, React, and Node.js, it provides real-time progress visualization through interactive dashboards while ensuring secure access with JWT authentication.",
+      "The application aims to improve productivity, motivation, and personal development by offering an all-in-one digital growth assistant."
+    ],
+    date: '2025-10-25',
+    codebtn: 'https://github.com/Vishesh9310/GrowthBoardFrontend',
+    previewbtn: 'https://growthboard.netlify.app/',
+  },
+  {
     id: 9,
     img: { id: 101, src: cooslibImg1, alt: "Main Image" },
     imageList: [
@@ -156,7 +189,7 @@ const projectData: Project[] = [
   },
   {
     id: 8,
-    img: { id: 101, src: project1, alt: "Main Image" },
+    img: { id: 101, src: notesappwithejs, alt: "Main Image" },
     imageList: [
     ],
     heading: 'NotesApp with ejs',
@@ -168,7 +201,7 @@ const projectData: Project[] = [
   },
   {
     id: 7,
-    img: { id: 101, src: project2, alt: "Main Image" },
+    img: { id: 101, src: emart, alt: "Main Image" },
     imageList: [
     ],
     heading: 'Emart',
@@ -200,7 +233,7 @@ const projectData: Project[] = [
   },
   {
     id: 5,
-    img: { id: 101, src: project4, alt: "Main Image" },
+    img: { id: 101, src: restfulbackendbookstore, alt: "Main Image" },
     imageList: [
     ],
     heading: "RESTful BookStore Api Backend",
@@ -214,7 +247,7 @@ const projectData: Project[] = [
   },
   {
     id: 4,
-    img: { id: 101, src: project5, alt: "Main Image" },
+    img: { id: 101, src: librarymanagement, alt: "Main Image" },
     imageList: [
     ],
     heading: 'Library Management System',
@@ -232,7 +265,7 @@ const projectData: Project[] = [
       { id: 2, src: keepnoteImg3, alt: "View Paste Page" },
     ],
     heading: 'KeepNotes',
-    desc: "hello",
+    desc: "It is simple note saver react-js web application.",
     about: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, mollitia.',
     date: '2025-04-19',
     codebtn: 'https://github.com/Vishesh9310/KeepNotes',
@@ -240,7 +273,7 @@ const projectData: Project[] = [
   },
   {
     id: 2,
-    img: { id: 101, src: project3, alt: "Main Image" },
+    img: { id: 101, src: hospitalimg, alt: "Main Image" },
     imageList: [
     ],
     heading: 'Sarthi',
@@ -252,7 +285,7 @@ const projectData: Project[] = [
   },
   {
     id: 1,
-    img: { id: 101, src: project10, alt: "Main Image" },
+    img: { id: 101, src: calculator, alt: "Main Image" },
     imageList: [
     ],
     heading: 'Calculator',

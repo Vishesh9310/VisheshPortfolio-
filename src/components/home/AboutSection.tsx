@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import logo from '../../assets/me/logobg.png'
+import logo from '../../assets/me/me half.jpg'
 import { useLocation } from 'react-router-dom';
 import Vishesh_Resume from '../../assets/resume/Vishesh 2023-26.pdf'
 
@@ -88,7 +88,7 @@ const AboutSection: React.FC = () => {
           </div>
         </div>
         <div className='lg:w-1/2 sm:w-full lg:content-center sm:py-10 lg:pt-30'>
-          <img src={logo} alt="full stack developer" className="w-[300px] md:w-[500px] lg:w-[450px] xl:w-[500px] rounded-lg object-cover sm:mx-auto" />
+          <img src={logo} alt="full stack developer" className="w-[300px] md:w-[500px] lg:w-[450px] xl:w-[500px] rounded-4xl object-cover sm:mx-auto" />
         </div>
       </div>
 
@@ -103,21 +103,23 @@ const AboutSection: React.FC = () => {
           {/* Responsive Container */}
           <div className="flex flex-col lg:flex-row justify-between gap-10">
             <p className="text-base sm:text-lg leading-relaxed lg:w-2/3">
-              Hi, I'm an aspiring **Full-Stack Developer** and current BCA student, focused on
-              crafting **responsive and user-friendly** web applications from the ground up.
-              I thrive on solving problems and bringing complete digital products to life. <br />
-              <br />
-              I have a solid foundation in **Data Structures, Algorithms, C, and C++**,
-              which informs my approach to efficient coding. On the stack, I specialize in the
-              **React.js** ecosystem for the frontend, styled with utility-first **Tailwind CSS**.
-              My backend expertise includes server-side logic (e.g., **Node.js**) and
-              effective data management using **MySQL and Relational Databases**. <br />
-              <br />
-              My goal is to deliver clean, scalable, and performance-optimized code on both the
-              client and server sides, ensuring a seamless experience for every user. <br />
-              <br />
-              Let’s discuss how my full-stack skills can benefit your next project!
+              Hi, I'm an aspiring <strong>Full-Stack Developer</strong> and a BCA student,
+              focused on building <strong>responsive and user-friendly</strong> web applications.
+              I enjoy solving problems and turning ideas into complete digital products. <br /><br />
+
+              I have a strong foundation in <strong>Data Structures, Algorithms, C, and C++</strong>,
+              which helps me write efficient and reliable code. I specialize in the
+              <strong> React.js</strong> ecosystem for frontend development, styled with
+              utility-first <strong>Tailwind CSS</strong>. My backend skills include
+              server-side development with <strong>Node.js</strong> and working with
+              <strong> MySQL, relational databases</strong> and <strong> MongoDB </strong>. <br /><br />
+
+              My goal is to write clean, scalable, and performance-optimized code on both
+              the client and server sides to ensure a seamless user experience. <br /><br />
+
+              Let’s connect and explore how my full-stack skills can contribute to your next project!
             </p>
+
 
             {/* Right Code Block */}
             <div className="code-box p-4 sm:p-6 rounded-xl shadow-lg text-xs sm:text-sm font-mono w-full lg:w-1/3 border border-[#222] overflow-x-auto">
@@ -125,7 +127,7 @@ const AboutSection: React.FC = () => {
                 {`const coder = {
   name: 'Vishesh',
   skills: ['React', 'TypeScript', 'Tailwind', 'Java',
-   'Spring Boot', 'MySQL'],
+  'Javascript', 'Node.js', 'Express.js', 'Spring Boot', 'MySQL', 'MongoDB'],
   hardWorker: true,
   quickLearner: true,
   problemSolver: true,
